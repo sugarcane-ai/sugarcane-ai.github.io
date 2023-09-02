@@ -3,7 +3,7 @@
 banner:
   title: "Microservices Framework for LLMs"
   content: "An Open Source Framework to create and deploy Serverless Workflow Apps while enhancing accuracy through Micro LLM training."
-  image: "/images/banner.png"
+  # image: "/images/banner.png"
   button:
     enable: true
     label: "Coming Soon"
