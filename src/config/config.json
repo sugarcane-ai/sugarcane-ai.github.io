@@ -6,7 +6,7 @@
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
     "logo": "/images/sugarcane-ai-logo.png",
-    "logo_darkmode": "/images/logo-darkmode.png",
+    "logo_darkmode": "/images/sugarcane-ai-logo.png",
     "logo_width": "150",
     "logo_height": "30",
     "logo_text": "Sugarcane AI"
@@ -30,7 +30,7 @@
   "navigation_button": {
     "enable": true,
     "label": "Coming Soon",
-    "link": "https://github.com/zeon-studio/Sugarcane AI"
+    "link": "#"
   },
 
   "disqus": {
