@@ -7,8 +7,20 @@
     {
       "name": "About",
       "url": "#"
+    },
+    {
+      "name": "More",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Team",
+          "url": "/team"
+        }
+      ]
     }
   ],
+
   "footer": [
    
   ]
