@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Sugarcane AI",
-    "base_url": "https://Sugarcane-ai.netlify.app",
+    "title": "Sugarcane AI - Open Source Microservices Framework for LLMs agnostic Workflow Plugins",
+    "base_url": "https://sugarcaneai.dev",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/sugar/favicon.png",
@@ -40,8 +40,8 @@
   },
 
   "metadata": {
-    "meta_author": "zeon.studio",
+    "meta_author": "Sugarcane Ai",
     "meta_image": "/images/og-image.png",
-    "meta_description": "astro and tailwind boilerplate"
+    "meta_description": "An open-source framework for teams, designed to separate concerns among various roles such as data scientists, prompt developers, and app developers. It enables the creation of workflow apps, prompt management, and fine-tuning of large language models (LLMs)"
   }
 }
