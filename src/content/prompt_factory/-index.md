@@ -25,7 +25,7 @@ features:
       - "**Open-source and free** for personal and commercial use"
     button:
       enable: true
-      label: "Join Waitlist"
+      label: "Coming Soon"
       link: "#"
 
 #   - title: "Prompt Factory for Prompt Developers"
