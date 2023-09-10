@@ -1,0 +1,34 @@
+---
+import Base from "@/layouts/Base.astro";
+import { markdownify } from "@/lib/utils/textConverter";
+import { Image } from "@astrojs/image/components";
+import { getEntryBySlug } from "astro:content";
+import { YouTube } from '@astro-community/astro-embed-youtube';
+
+
+const demo = await getEntryBySlug("demo", "-index");
+const { Content } = await demo.render();
+const { title, description, meta_title, image, video } = demo.data;
+
+---
+
+<Base
+  title={title}
+  meta_title={meta_title}
+  description={description}
+  image={image}
+>
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="text-center md:col-10 lg:col-7">
+            <h2 set:html={markdownify(title)} class="h3 mb-6" />
+            <YouTube id={video} />
+          <div class="content">
+            <Content />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
