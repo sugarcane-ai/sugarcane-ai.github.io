@@ -4,11 +4,11 @@
     "base_url": "https://Sugarcane-ai.netlify.app",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
-    "logo": "/images/sugarcane-ai-logo.png",
-    "logo_darkmode": "/images/sugarcane-ai-logo.png",
-    "logo_width": "150",
-    "logo_height": "30",
+    "favicon": "/images/sugar/favicon.png",
+    "logo": "/images/sugar/logo-trans.png",
+    "logo_darkmode": "/images/sugar/logo-black-3.png",
+    "logo_width": "250",
+    "logo_height": "50",
     "logo_text": "Sugarcane AI"
   },
 
@@ -16,7 +16,7 @@
     "search": true,
     "sticky_header": true,
     "theme_switcher": true,
-    "default_theme": "system",
+    "default_theme": "dark",
     "pagination": 2,
     "summary_length": 200,
     "blog_folder": "blog"
@@ -29,7 +29,7 @@
 
   "navigation_button": {
     "enable": true,
-    "label": "Coming Soon",
+    "label": "Join Waitlist",
     "link": "#"
   },
 

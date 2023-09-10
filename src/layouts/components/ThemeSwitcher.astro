@@ -9,7 +9,7 @@ const { className }: { className?: string } = Astro.props;
 ---
 
 {
-  theme_switcher && (
+  theme_switcher && false && (
     <div class={`theme-switcher ${className}`}>
       <input id="theme-switcher" data-theme-switcher type="checkbox" />
       <label for="theme-switcher">

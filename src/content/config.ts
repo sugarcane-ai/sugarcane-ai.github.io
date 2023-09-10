@@ -16,7 +16,7 @@ const blogCollection = defineCollection({
 });
 
 // Author collection schema
-const authorsCollection = defineCollection({
+const teamCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     meta_title: z.string().optional(),
@@ -52,6 +52,6 @@ const pagesCollection = defineCollection({
 // Export collections
 export const collections = {
   blog: blogCollection,
-  authors: authorsCollection,
+  teams: teamCollection,
   pages: pagesCollection,
 };

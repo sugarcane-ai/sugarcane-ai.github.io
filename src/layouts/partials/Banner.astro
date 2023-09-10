@@ -1,0 +1,37 @@
+---
+import { markdownify } from "@/lib/utils/textConverter";
+import { Image } from "@astrojs/image/components";
+const { banner } = Astro.props;
+---
+<!-- Banner -->
+<section class="section pt-14">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="mb-16 text-center lg:col-8">
+          <h1 set:html={markdownify(banner.title)} class="mb-4" />
+          <h4 set:html={markdownify(banner.content)} class="mb-8" />
+          {
+            banner.button.enable && (
+              <a class="btn btn-primary " href={banner.button.link}>
+                {banner.button.label}
+              </a>
+            )
+          }
+        </div>
+        {
+          banner.image && (
+            <div class="col-12">
+              <Image
+                src={banner.image}
+                height={380}
+                width={1200}
+                alt="banner image"
+                format="webp"
+              />
+            </div>
+          )
+        }
+      </div>
+    </div>
+</section>
+<!-- /Banner -->

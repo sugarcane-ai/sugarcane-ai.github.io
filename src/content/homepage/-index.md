@@ -2,46 +2,57 @@
 # Banner
 banner:
   title: "Microservices Framework for LLMs"
-  content: "An Open Source Framework to create and deploy Serverless Workflow Apps while enhancing accuracy through Micro LLM training."
+  content: "Build, Train, and Manage Workflow Plugins using Micro LLMs"
   # image: "/images/banner.png"
+  image: "/images/sugar/workflow-dark-4.png"
   button:
     enable: true
-    label: "Coming Soon"
+    label: "Join Waitlist"
     link: "#"
 
 # Features
 features:
-  - title: "What's Included in Sugarcane AI"
+  - title: "An Open Source Framework for Developer Teams"
     image: "/images/service-1.png"
-    content: "Sugarcane AI is a  starter template that includes everything you need to get started with you LLM powered Workflow App. What's Included in Sugarcane AI"
+    content: "Sugarcane AI provides a Microservices Framework for LLM-agnostic workflow plugin development, allowing developers to prioritize business logic over LLM selection, cost, and performance"
     bulletpoints:
-      - "Drag Drop UI to create workflow"
-      - "Reusable Prompts to get you started"
-      - "One click deploy to your fav serverless infrastructure"
-      - "Tools to refine your prompts "
-      - "Tools to cature prompts logs, label data and manage datasets"
-      - "One click way to train your own LLMs"
-      - "Marketplace to share your prompts and workflows"
-      - "**Open-source and free** for personal and commercial use"
+      - "Workflow As a Service for Plugin Developers"
+      - "Prompts As a Service for Prompt Developers"
+      - "LLMs As a Service for Data Scientishts"
+      - "Open Marketpalce to Package, Share Reuse & Monetize task specific Prompt packages, Micro LLMs & Datasets"
     button:
       enable: true
-      label: "Coming Soon"
+      label: "Join Waitlist"
+      link: "#"
+    
+  - title: "What are Prompt Packages?"
+    image: "/images/sugar/prompt_packages-3.png"
+    content: "A prompt package is a collection of prompt templates, dataset, and llm configuration that can be distributed as a unit of reusable prompt or functionality in the LLM ecosystem. A prompt template is tied to a specific LLM config for high accuracy"
+    bulletpoints:
+      - "Enables Package of prompts and share with teams"
+      - "Can be distributed via API"
+      - "Together with a Micro LLM, it can deliver exceptionally high performance."
+    button:
+      enable: true
+      label: "Join Waitlist"
+      link: "https://github.com/zeon-studio/Sugarcane AI"
+
+  - title: "What are Micro LLMs?"
+    image: "/images/service-2.png"
+    content: "Micro LLMs are smaller fine tuned model build on top of 3b/7b parameters and trained for task specific prompts, which can be used to automate workflows/plugins to ensure their reliability and accuracy"
+    bulletpoints:
+      - "Very High Accuracy for Task Specific Prompts"
+      - "Low Cost for Pre finetune Prompts"
+      - "Ulta Low Latency for response generation"
+    button:
+      enable: true
+      label: "Join Waitlist"
       link: "#"
 
-  # - title: "Discover the Key Features Of Astro"
-  #   image: "/images/service-2.png"
-  #   content: "Astro is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
-  #   bulletpoints:
-  #     - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-  #     - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-  #     - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
-  #   button:
-  #     enable: true
-  #     label: "Get Started Now"
-  #     link: "https://github.com/zeon-studio/Sugarcane AI"
+  
 
   # - title: "The Top Reasons to Choose Astro for Your Next Project"
-  #   image: "/images/service-3.png"
+  #   image: "/images/service-2.png"
   #   content: "With Astro, you can build modern and content-focused websites without sacrificing performance or ease of use."
   #   bulletpoints:
   #     - "Instantly load static sites for better user experience and SEO."
