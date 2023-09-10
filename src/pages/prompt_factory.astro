@@ -16,8 +16,7 @@ interface Homepage {
   features: Feature[];
 }
 
-const homepage = await getEntryBySlug("homepage", "-index");
-const testimonial = await getEntryBySlug("sections", "testimonial");
+const homepage = await getEntryBySlug("prompt_factory", "-index");
 const call_to_action = await getEntryBySlug("sections", "call-to-action");
 const { banner, features }: Homepage = homepage.data;
 ---
@@ -25,6 +24,7 @@ const { banner, features }: Homepage = homepage.data;
 <Base>
   <Banner banner={banner} />
   <Features features={features} />
+  
   <!-- <Testimonial testimonial={testimonial} /> -->
   <CallToAction call_to_action={call_to_action} />
 </Base>
