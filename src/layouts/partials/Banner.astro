@@ -7,9 +7,9 @@ const { banner } = Astro.props;
 <section class="section pt-14">
     <div class="container">
       <div class="row justify-center">
-        <div class="mb-16 text-center lg:col-7">
+        <div class="mb-16 text-center lg:col-8">
           <h1 set:html={markdownify(banner.title)} class="mb-4" />
-          <p set:html={markdownify(banner.content)} class="mb-8" />
+          <h4 set:html={markdownify(banner.content)} class="mb-8" />
           {
             banner.button.enable && (
               <a class="btn btn-primary " href={banner.button.link}>

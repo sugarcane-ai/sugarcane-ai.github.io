@@ -5,6 +5,6 @@ image: "/images/call-to-action.png"
 description: "Experience the future of AI with Sugarcane AI and Micro LLMs. Build and deploy AI worfklows with ease and flexibility."
 button:
   enable: true
-  label: "Get Started Now"
+  label: "Join Waitlist"
   link: "#"
 ---

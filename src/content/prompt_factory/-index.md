@@ -6,7 +6,7 @@ banner:
   image: "/images/sugar/workflows.png"
   button:
     enable: true
-    label: "Coming Soon"
+    label: "Join Waitlist"
     link: "#"
 
 # Features
@@ -25,7 +25,7 @@ features:
       - "**Open-source and free** for personal and commercial use"
     button:
       enable: true
-      label: "Coming Soon"
+      label: "Join Waitlist"
       link: "#"
 
 #   - title: "Prompt Factory for Prompt Developers"

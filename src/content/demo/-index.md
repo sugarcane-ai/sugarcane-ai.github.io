@@ -1,5 +1,5 @@
 ---
-title: "Demo"
+title: "Framework Demo"
 meta_title: "Demo"
 description: "Sugarcane AI Demo"
 image: "/images/avatar.png"
