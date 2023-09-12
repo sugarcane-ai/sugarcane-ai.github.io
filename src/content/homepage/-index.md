@@ -18,7 +18,7 @@ features:
     bulletpoints:
       - "Workflow As a Service for Plugin Developers"
       - "Prompts As a Service for Prompt Developers"
-      - "LLMs As a Service for Data Scientishts"
+      - "LLMs As a Service for Data Scientists"
       - "Open Marketpalce to Package, Share Reuse & Monetize task specific Prompt packages, Micro LLMs & Datasets"
     button:
       enable: true
