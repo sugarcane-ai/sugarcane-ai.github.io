@@ -1,19 +1,34 @@
 ---
 import { markdownify } from "@/lib/utils/textConverter";
+import { boolean } from "astro/zod";
 import { Image } from "astro:assets";
+import { emit } from "process";
+import SignupForm from "../SingupForm";
+
+const host = 'https://serverless-email-signup-form.hi-c63.workers.dev'
 const { call_to_action } = Astro.props;
 
 const result = { subscribed: false }
 
-// console.log("astro method", Astro.request.method);
+function isValidEmail(email: string): boolean {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+console.log("astro method", Astro.request.method);
+const errors = {email: ""};
 if (Astro.request.method === "POST") {
   try {
     const data = await Astro.request.formData();
     const email = data.get("email");
 
-    // console.log("subscribe", email);
+    if (typeof email !== "string" || !isValidEmail(email)) {
+      errors.email += "Email is not valid. ";
+    }
 
-    await fetch("/api/email-signup", {
+    console.log("subscribe", email);
+
+    
+    await fetch(`${host}/api/email-signup`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -56,9 +71,13 @@ if (Astro.request.method === "POST") {
                 set:html={markdownify(call_to_action.data.description)}
                 class="mb-6"
               />
+
+              <SignupForm client:load></SignupForm>         
+
               {call_to_action.data.button.enable && !result.subscribed && (
                 <form method="POST">
                   <input
+                    name="email"
                     type="email"
                     id="email"
                     placeholder="Enter your email"
