@@ -1,14 +1,17 @@
 ---
 import { markdownify } from "@/lib/utils/textConverter";
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 const { call_to_action } = Astro.props;
 
 const result = { subscribed: false }
 
+// console.log("astro method", Astro.request.method);
 if (Astro.request.method === "POST") {
   try {
     const data = await Astro.request.formData();
     const email = data.get("email");
+
+    // console.log("subscribe", email);
 
     await fetch("/api/email-signup", {
       method: "POST",
