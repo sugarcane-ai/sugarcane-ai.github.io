@@ -6,9 +6,9 @@
     "trailing_slash": false,
     "favicon": "/images/sugar/favicon.png",
     "logo": "/images/sugar/logo-trans.png",
-    "logo_darkmode": "/images/sugar/logo-black-3.png",
-    "logo_width": "250",
-    "logo_height": "50",
+    "logo_darkmode": "/images/sugar/logo-transparent.png",
+    "logo_width": "180",
+    "logo_height": "40",
     "logo_text": "Sugarcane AI"
   },
 
@@ -20,7 +20,7 @@
     "pagination": 2,
     "summary_length": 200,
     "blog_folder": "blog"
-  },
+},
 
   "params": {
     "contact_form_action": "#",
@@ -28,9 +28,13 @@
   },
 
   "navigation_button": {
-    "enable": true,
+    "enable": false,
     "label": "Join Waitlist",
     "link": "#"
+  },
+
+  "waitlist_button": {
+    "enable": false
   },
 
   "disqus": {
@@ -40,8 +44,16 @@
   },
 
   "metadata": {
-    "meta_author": "Sugarcane Ai",
+    "meta_author": "Sugarcane AI",
     "meta_image": "/images/og-image.png",
     "meta_description": "An open-source framework for teams, designed to separate concerns among various roles such as data scientists, prompt developers, and app developers. It enables the creation of workflow apps, prompt management, and fine-tuning of large language models (LLMs)"
-  }
+  },
+
+  "social": [
+    {
+      "name": "discord",
+      "icon": "FaDiscord",
+      "link": "https://discord.gg/TZw4GDrG"
+    }
+  ]
 }

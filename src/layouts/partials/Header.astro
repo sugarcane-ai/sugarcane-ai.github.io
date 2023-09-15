@@ -4,6 +4,9 @@ import ThemeSwitcher from "@/components/ThemeSwitcher.astro";
 import config from "@/config/config.json";
 import menu from "@/config/menu.json";
 import { IoSearch } from "react-icons/io5/index.js";
+import JoinWaitlist from "../SingupForm";
+import Discord from "@/shortcodes/Discord.astro";
+import Social from "@/components/Social.astro";
 
 export interface ChildNavigationLink {
   name: string;
@@ -18,7 +21,7 @@ export interface NavigationLink {
 }
 
 const { main }: { main: NavigationLink[] } = menu;
-const { navigation_button, settings } = config;
+const { navigation_button, waitlist_button, social, settings } = config;
 const { pathname } = Astro.url;
 ---
 
@@ -99,9 +102,20 @@ const { pathname } = Astro.url;
                   {menu.name}
                 </a>
               </li>
-            )}
+            )}w
           </>
         ))
+      }
+      {
+        waitlist_button.enable && (
+          <li class="mt-4 inline-block">  
+            <JoinWaitlist 
+              client:load
+              klass="btn btn-outline-primary btn-sm"
+            >
+            </JoinWaitlist>
+          </li>
+        )
       }
       {
         navigation_button.enable && (
@@ -128,6 +142,7 @@ const { pathname } = Astro.url;
           </a>
         )
       }
+      <Social source={social} className="social-icons" />
       <ThemeSwitcher className="mr-5" />
       {
         navigation_button.enable && (

@@ -6,9 +6,11 @@ banner:
   # image: "/images/banner.png"
   image: "/images/sugar/workflow-dark-4.png"
   button:
-    enable: true
+    enable: false
     label: "Join Waitlist"
     link: "#"
+  waitlist:
+    enable: true
 
 # Features
 features:
@@ -18,12 +20,14 @@ features:
     bulletpoints:
       - "Workflow As a Service for Plugin Developers"
       - "Prompts As a Service for Prompt Developers"
-      - "LLMs As a Service for Data Scientishts"
+      - "LLMs As a Service for Data Scientists"
       - "Open Marketpalce to Package, Share Reuse & Monetize task specific Prompt packages, Micro LLMs & Datasets"
     button:
-      enable: true
+      enable: false
       label: "Join Waitlist"
       link: "#"
+    waitlist:
+      enable: true
     
   - title: "What are Prompt Packages?"
     image: "/images/sugar/prompt_packages-3.png"
@@ -33,9 +37,11 @@ features:
       - "Can be distributed via API"
       - "Together with a Micro LLM, it can deliver exceptionally high performance."
     button:
-      enable: true
+      enable: false
       label: "Join Waitlist"
       link: "https://github.com/zeon-studio/Sugarcane AI"
+    waitlist:
+      enable: true
 
   - title: "What are Micro LLMs?"
     image: "/images/service-2.png"
@@ -45,9 +51,11 @@ features:
       - "Low Cost for Pre finetune Prompts"
       - "Ulta Low Latency for response generation"
     button:
-      enable: true
+      enable: false
       label: "Join Waitlist"
       link: "#"
+    waitlist:
+      enable: true
 
   
 
