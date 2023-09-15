@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
-import Button from './shortcodes/Button';
 
-const host = 'https://serverless-email-signup-form.hi-c63.workers.dev';
+const host = import.meta.env.PUBLIC_SIGNUP_FORM_HOST
 
 const customStyles = {
     content: {
