@@ -33,7 +33,11 @@ const { footer }: { footer: { name: string; url: string }[] } = menu;
   </div>
   <div class="border-t border-border py-7 dark:border-darkmode-border">
     <div class="container text-center text-light dark:text-darkmode-light">
-      <p set:html={markdownify(config.params.copyright)} />
+      <p>
+        <span set:html={markdownify(config.params.copyright)} />
+        <span class="text-red-500">{config.params.love}</span>
+      <p>
+  
     </div>
   </div>
 </footer>

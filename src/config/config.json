@@ -24,7 +24,8 @@
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "Sugarcane Inc"
+    "copyright": "Made in Bharat with ",
+    "love": "❤"
   },
 
   "navigation_button": {
