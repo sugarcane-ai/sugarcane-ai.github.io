@@ -2,6 +2,7 @@
 import { markdownify } from "@/lib/utils/textConverter";
 import { Image } from "astro:assets";
 import { FaCheck } from "react-icons/fa/index.js";
+import JoinWaitlist from "../SingupForm";
 const { features } = Astro.props;
 
 ---
@@ -40,6 +41,9 @@ const { features } = Astro.props;
                     <a class="btn btn-primary mt-5" href={feature.button.link}>
                         {feature.button.label}
                     </a>
+                    )}
+                    {feature.waitlist.enable && (
+                        <JoinWaitlist client:load></JoinWaitlist>
                     )}
                 </div>
                 </div>

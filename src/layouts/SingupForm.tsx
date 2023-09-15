@@ -1,78 +1,125 @@
 import React, { useState } from 'react';
+import Modal from 'react-modal';
+import Button from './shortcodes/Button';
 
-const host = 'https://serverless-email-signup-form.hi-c63.workers.dev'
-// const host = 'http://0.0.0.0:8787'
+const host = 'https://serverless-email-signup-form.hi-c63.workers.dev';
 
-const SignupForm = () => {
-  const [email, setEmail] = useState('');
-//   const [name, setName] = useState('');
-  const [success, setSuccess] = useState(false);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    // Create a data object with email and name
-    const data = {
-      email,
-    //   name,
-    };
-
-    try {
-      // Make a POST request to the API endpoint
-      const response = await fetch(`${host}/api/email-signup`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
-
-      if (response.status === 200) {
-        // Submission was successful
-        setSuccess(true);
-      } else {
-        // Handle other response statuses or errors here
-        console.error('Submission failed.');
-      }
-    } catch (error) {
-      // Handle network or other errors here
-      console.error('Error:', error);
-    }
-  };
-
-  if (success) {
-    return (
-      <div>
-        <p>Details have been submitted successfully!</p>
-      </div>
-    );
-  }
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-      </div>
-      {/* <div>
-        <label htmlFor="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
-      </div> */}
-      <button type="submit">Join Waitlist</button>
-    </form>
-  );
+const customStyles = {
+    content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
+    },
 };
 
-export default SignupForm;
+const SignupForm = ({ isOpen, onRequestClose }) => {
+    const [email, setEmail] = useState('');
+    const [success, setSuccess] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const data = {
+            email,
+        };
+
+        try {
+            const response = await fetch(`${host}/api/email-signup`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (response.status === 200) {
+                setSuccess(true);
+            } else {
+                console.error('Submission failed.');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    };
+
+    return (
+        <Modal
+            isOpen={isOpen}
+            onRequestClose={onRequestClose}
+            contentLabel="Join Waitlist"
+            style={customStyles}
+        >
+                        
+            <div >
+                <button
+                    onClick={onRequestClose} // Close the modal when this button is clicked
+                    style={{ float: 'right' }}
+                    >
+                    Close
+                </button>
+                <form onSubmit={handleSubmit}>
+                    <label htmlFor="email" className="form-label">
+                        Join the Wait List
+                    </label>
+                    
+                    <input
+                        type="email"
+                        id="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                    />
+                    
+                    <button type="submit" className="btn btn-primary">Join</button>
+                </form>
+            </div>
+            {success && (
+                <p>Added to wait list successfully !</p>
+            )}
+
+
+        </Modal>
+    );
+};
+
+function JoinWaitlist({ klass = 'btn btn-primary mt-5'}) {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleOpenModal = async(e) => {
+        e.preventDefault();
+        setIsOpen(true);
+    };
+
+    const handleCloseModal = (updatedConfig) => {
+        setIsOpen(false);
+
+    };
+
+    return (
+        <>  
+            <a
+              className={klass}
+              href={"#"}
+              onClick={handleOpenModal}
+            style={{ marginLeft: "1rem" }}
+            >Join Waitlist</a>
+            {/* <button
+                onClick={handleOpenModal}
+                style={{ marginLeft: "1rem" }}
+                className={"btn btn-primary mt-5 " + klass}
+            // type="submit"
+            >
+                Join Waitlist
+            </button> */}
+            <SignupForm
+                isOpen={isOpen}
+                onRequestClose={handleCloseModal}
+            />
+        </>
+    );
+}
+
+export default JoinWaitlist;

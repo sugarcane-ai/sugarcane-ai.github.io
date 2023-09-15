@@ -4,6 +4,7 @@ import { markdownify } from "@/lib/utils/textConverter";
 import { Image } from "astro:assets";
 import { getEntryBySlug } from "astro:content";
 import { YouTube } from '@astro-community/astro-embed-youtube';
+import Youtube from "@/shortcodes/Youtube";
 
 
 const demo = await getEntryBySlug("demo", "-index");
@@ -21,9 +22,9 @@ const { title, description, meta_title, image, video } = demo.data;
   <section class="section-sm">
     <div class="container">
       <div class="row justify-center">
-        <div class="text-center md:col-10 lg:col-7">
+        <div class="text-center md:col-10 lg:col-12">
             <h2 set:html={markdownify(title)} class="h3 mb-6" />
-            <YouTube id={video} />
+            <Youtube client:load id={video} title="Demo" />
           <div class="content">
             <Content />
           </div>

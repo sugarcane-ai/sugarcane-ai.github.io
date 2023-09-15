@@ -1,6 +1,7 @@
 ---
 import { markdownify } from "@/lib/utils/textConverter";
 import { Image } from "astro:assets";
+import JoinWaitlist from "../SingupForm";
 const { banner } = Astro.props;
 ---
 <!-- Banner -->
@@ -15,6 +16,11 @@ const { banner } = Astro.props;
               <a class="btn btn-primary " href={banner.button.link}>
                 {banner.button.label}
               </a>
+            )
+          }
+          {
+            banner.waitlist.enable && (
+              <JoinWaitlist client:load></JoinWaitlist>
             )
           }
         </div>

@@ -2,8 +2,7 @@
 import { markdownify } from "@/lib/utils/textConverter";
 import { boolean } from "astro/zod";
 import { Image } from "astro:assets";
-import { emit } from "process";
-import SignupForm from "../SingupForm";
+import JoinWaitlist from "../SingupForm";
 
 const host = 'https://serverless-email-signup-form.hi-c63.workers.dev'
 const { call_to_action } = Astro.props;
@@ -14,7 +13,6 @@ function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
-console.log("astro method", Astro.request.method);
 const errors = {email: ""};
 if (Astro.request.method === "POST") {
   try {
@@ -26,8 +24,6 @@ if (Astro.request.method === "POST") {
     }
 
     console.log("subscribe", email);
-
-    
     await fetch(`${host}/api/email-signup`, {
       method: "POST",
       headers: {
@@ -72,27 +68,11 @@ if (Astro.request.method === "POST") {
                 class="mb-6"
               />
 
-              <SignupForm client:load></SignupForm>         
+              
 
               {call_to_action.data.button.enable && !result.subscribed && (
-                <form method="POST">
-                  <input
-                    name="email"
-                    type="email"
-                    id="email"
-                    placeholder="Enter your email"
-                    required
-                  />
-                   <button
-                    style={{ marginLeft: "1rem" }}
-                    class="btn btn-primary mt-5"
-                    type="submit"
-                  >
-                    Join Waitlist
-                  </button>
-                </form>
+                <JoinWaitlist client:load></JoinWaitlist>
               )}
-              { result.subscribed && <h2>Thank you for Subscribing!</h2>}
             </div>
           </div>
         </div>
