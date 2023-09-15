@@ -42,7 +42,7 @@ const { features } = Astro.props;
                         {feature.button.label}
                     </a>
                     )}
-                    {feature.waitlist.enable && (
+                    {feature.waitlist && feature.waitlist.enable && (
                         <JoinWaitlist client:load></JoinWaitlist>
                     )}
                 </div>
