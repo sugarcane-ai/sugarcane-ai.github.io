@@ -17,6 +17,7 @@ package-lock.json
 
 # environment variables
 .env
+.env.development
 .env.production
 
 # macOS-specific files
