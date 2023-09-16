@@ -9,7 +9,7 @@ import remarkCollapse from "remark-collapse";
 import remarkToc from "remark-toc";
 import config from "./src/config/config.json";
 
-import cloudflare from "@astrojs/cloudflare";
+// import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
@@ -21,9 +21,6 @@ export default defineConfig({
       applyBaseStyles: false
     }
   }),
-  // image({
-  //   serviceEntryPoint: "@astrojs/image/sharp",
-  // }),
   AutoImport({
     imports: ["@/shortcodes/Button", "@/shortcodes/Accordion", "@/shortcodes/Notice", "@/shortcodes/Video", "@/shortcodes/Youtube", "@/shortcodes/Tabs", "@/shortcodes/Tab"]
   }), mdx()],
@@ -37,6 +34,6 @@ export default defineConfig({
     },
     extendDefaultPlugins: true
   },
-  output: "server",
-  adapter: cloudflare()
+  // output: "server",
+  // adapter: cloudflare()
 });
