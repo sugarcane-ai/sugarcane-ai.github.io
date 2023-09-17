@@ -58,28 +58,29 @@ export default defineConfig({
 				github: 'https://github.com/sugarcane-ai',
 				discord: 'https://discord.gg/TZw4GDrG',
 			},
-			// head: [
-      //   {
-			// 		tag: 'title',
-			// 		content: 'Sugarcane AI Documentation'
-			// 	},
-			// 	{
-			// 		tag: 'meta',
-			// 		attrs: { property: 'og:image', content: '/public/images/sugar/logos/full-small.png' },
-			// 	},
-			// 	{
-			// 		tag: 'meta',
-			// 		attrs: { property: 'twitter:image', content: site + '/public/images/sugar/logos/full-small.png' },
-			// 	},
-			// ],
-      sidebar: [
-		    // An external link to the Astro website.
+			head: [
         {
-          label: 'Arcitecture',
+					tag: 'title',
+					content: 'Sugarcane AI Documentation'
+				},
+				{
+					tag: 'meta',
+					attrs: { property: 'og:image', content: '/public/images/sugar/logos/full-small.png' },
+				},
+				{
+					tag: 'meta',
+					attrs: { property: 'twitter:image', content: site + '/public/images/sugar/logos/full-small.png' },
+				},
+			],
+      sidebar: [
+        {
+          label: 'Guides',
           items: [
-            { label: 'Components', link: '/guides/components/' },
+            { label: 'Main', link: '/docs/guides/' },
+            { label: 'Get Started', link: '/docs/guides/get_started/' },
+            { label: 'Architecture', link: '/docs/guides/architecture/', badge: { text: 'New', variant: 'tip' } },
           ],
-        },
+        }
       ]
     }),
   ],
