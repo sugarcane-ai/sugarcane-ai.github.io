@@ -1,0 +1,33 @@
+diff --git a/node_modules/@astrojs/starlight/index.ts b/node_modules/@astrojs/starlight/index.ts
+index 50e37d0..96f640c 100644
+--- a/node_modules/@astrojs/starlight/index.ts
++++ b/node_modules/@astrojs/starlight/index.ts
+@@ -27,11 +27,11 @@ export default function StarlightIntegration(opts: StarlightUserConfig): AstroIn
+ 		hooks: {
+ 			'astro:config:setup': ({ config, injectRoute, updateConfig }) => {
+ 				injectRoute({
+-					pattern: '404',
++					pattern: 'docs/404',
+ 					entryPoint: '@astrojs/starlight/404.astro',
+ 				});
+ 				injectRoute({
+-					pattern: '[...slug]',
++					pattern: 'docs/[...slug]',
+ 					entryPoint: '@astrojs/starlight/index.astro',
+ 				});
+ 				const newConfig: AstroUserConfig = {
+diff --git a/node_modules/@astrojs/starlight/utils/head.ts b/node_modules/@astrojs/starlight/utils/head.ts
+index 25a2091..d1cf48f 100644
+--- a/node_modules/@astrojs/starlight/utils/head.ts
++++ b/node_modules/@astrojs/starlight/utils/head.ts
+@@ -6,7 +6,9 @@ const HeadSchema = HeadConfigSchema();
+ export function createHead(defaults: HeadUserConfig, ...heads: HeadConfig[]) {
+ 	let head = HeadSchema.parse(defaults);
+ 	for (const next of heads) {
+-		head = mergeHead(head, next);
++		if(next){
++			head = mergeHead(head, next);
++		}
+ 	}
+ 	return sortHead(head);
+ }
