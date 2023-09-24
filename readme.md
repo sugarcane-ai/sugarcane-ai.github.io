@@ -4,7 +4,7 @@
 
 # Sugarcane AI: Microservices Framework for LLM Agnostic App Development 🤖
 
-[![License](https://img.shields.io/github/license/sugarcane-ai/sugarcane.svg)](https://github.com/sugarcane-ai/sugarcane-ai.github.io/blob/develop/LICENSE)
+[![License](https://img.shields.io/github/license/sugarcane-ai/sugarcane-ai.github.io)](https://github.com/sugarcane-ai/sugarcane-ai.github.io/blob/develop/LICENSE)
 
 1. [Introduction](#introduction--)
 2. [Key Features of Microservices Framework](#key-features--)
