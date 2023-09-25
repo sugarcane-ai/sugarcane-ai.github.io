@@ -30,7 +30,7 @@ Sugarcane AI is an open-source framework designed to simplify and accelerate LLM
 
 - **Simplify Workflow Development**: Develop, train, and manage workflow plugins seamlessly, reducing complexity over the chain of prompts. 💪
 
-- **Reusable Prompt Packages**: Create, share, and reuse high-accuracy prompts with ease, saving time and effort, and facilitating rapid experimentation in production without regression, ensuring performance visibility at every step.
+- **Reusable Prompt Packages**: Create, share, and reuse high-accuracy prompts with ease, saving time and effort, and facilitating rapid experimentation in production without regression, ensuring performance visibility at every step. 📑
 
 - **Open Source Community**: Collaborate and contribute to the thriving open-source community of developers dedicated to simplifying AI app development using Sugarcane AI. 🌐
 
@@ -67,7 +67,7 @@ Microservices allow developers to concentrate on specific AI application compone
 Microservices foster collaboration among development teams. Separate teams can work on different services concurrently, accelerating development and innovation for top-notch AI apps.
 
 ### Decoupled Flexibility 🔄
-In microservices, prompts, data, and the application layer are decoupled, providing flexibility. Developers can fine-tune LLMs, manage prompts, and handle data independently, enabling rapid experimentation and innovation.
+In microservices, prompts, data, and the application layer are decoupled, providing flexibility. Developers can fine-tune LLMs, manage prompts, and handle data independently, enabling rapid experimentation and innovation. 📑
 
 ### Robust Reliability, Scalability, and Maintenance 📈
 Microservices offer improved reliability, effortless scalability, and streamlined maintenance, ensuring consistent AI app performance without disruptions, regardless of app size, while allowing efficient updates and bug fixes.
@@ -167,6 +167,9 @@ Next, we're turning our focus to the Workflow Layer. Brace yourself for a user-f
 ### 3. Marketplace Layer 🌐
 
 The Marketplace Layer is where the magic happens. We're enhancing this core component to allow you to package, share, and reuse workflows, prompts, and datasets effortlessly across the developer ecosystem, fostering collaboration and innovation across the community.
+
+![Roadmap](public/images/sugar/Roadmap.png)
+
 
 Join us on this exhilarating journey as we transform Sugarcane AI into a powerful and user-friendly platform for Micro LLM-driven workflow automation solutions tailored to developers like you.
 
