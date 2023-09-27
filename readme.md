@@ -139,8 +139,6 @@ Thanks to the following contributors for their efforts and support in adding val
 </table>
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-
-
 ## 🌐 Connect with Us <a name="connect-with-us--"></a>
 
 Stay updated with the latest news, discussions, and support on our communities.
