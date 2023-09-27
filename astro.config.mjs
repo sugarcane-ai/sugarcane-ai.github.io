@@ -56,7 +56,7 @@ export default defineConfig({
 			},
 			social: {
 				github: 'https://github.com/sugarcane-ai',
-				discord: 'https://discord.gg/TZw4GDrG',
+				discord: 'https://discord.com/invite/WRu3KXqz',
 			},
 			head: [
         {
@@ -72,15 +72,80 @@ export default defineConfig({
 					attrs: { property: 'twitter:image', content: site + '/public/images/sugar/logos/full-small.png' },
 				},
 			],
+      // sidebar: [
+      //   {
+      //     label: 'Sugarcane AI',
+      //     items: [
+      //       { label: 'Main', link: '/docs/guides/' },
+      //       { label: 'Get Started', link: '/docs/guides/get_started/' },
+      //       { label: 'Architecture', link: '/docs/guides/architecture/', badge: { text: 'New', variant: 'tip' } },
+      //     ],
+      //   }
+      // ]
+      
       sidebar: [
         {
-          label: 'Guides',
+          label: 'Sugarcane AI',
+          type: 'category',
           items: [
-            { label: 'Main', link: '/docs/guides/' },
-            { label: 'Get Started', link: '/docs/guides/get_started/' },
-            { label: 'Architecture', link: '/docs/guides/architecture/', badge: { text: 'New', variant: 'tip' } },
+            { label: 'Introduction 🙏', link: '/docs/guides/introduction' },
+            // { label: 'QuickStart', link: '/docs/guides/installation/' },
           ],
-        }
+        },
+        {
+          label: 'Architecture',
+          type: 'category',
+          items: [
+            { label: 'Microservices Framework 🔧', link: '/docs/guides/framework/' },
+            { label: 'Micro LLMs 🧬', link: '/docs/guides/microllm/' },
+            { label: 'Prompt Packages 📦', link: '/docs/guides/packages/' },
+            { label: 'Prompt Templates 📑', link: '/docs/guides/templates/' },
+            { label: 'Marketplace 🛒', link: '/docs/guides/marketplace/' },
+          ],
+        },
+        {
+          label: 'Examples',
+          type: 'doc',
+          items: [
+            { label: 'Demo Videos 📺', link: '/docs/guides/demo/' },
+          ],
+        },
+
+        {
+          label: 'Roadmap',
+          type: 'doc',
+          items: [
+            { label: 'Roadmap 🗺️', link: '/docs/guides/roadmap/' },
+          ],
+        },
+        {
+          label: 'Connect',
+          type: 'doc',
+          items: [
+            { label: 'Connect 🌐', link: '/docs/guides/connect/' },
+          ],
+        },
+       
+        // {
+        //   label: 'Tutorials',
+        //   items: [
+        //     { label: 'How to 1', link: '/docs/guides/howto_1' },
+        //     { label: 'How to 2', link: '/docs/guides/howto_2/' },
+        //   ],
+        // },
+        {
+          label: 'Contribution',
+          items: [
+            { label: 'How to Contribute 🤝', link: '/docs/guides/contribute' },
+            { label: 'Contributors 👨‍💻', link: '/docs/guides/contributors/' },
+          ],
+        },
+        {
+          label: 'Licence',
+          items: [
+            { label: 'Licence', link: '/docs/guides/licence' },
+          ],
+        },
       ]
     }),
   ],
