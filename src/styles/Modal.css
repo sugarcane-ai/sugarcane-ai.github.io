@@ -1,0 +1,92 @@
+.modal-window {
+  background-color: rgba(255, 255, 255, 0.25);
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.3s;
+  width: 430px;
+  height: 350px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  background: rgb(232, 236, 233);
+  border-radius: 1rem;
+}
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+
+/* Demo Styles */
+
+
+.modal-window div:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.logo {
+  max-width: 150px;
+  display: block;
+}
+
+small {
+  color: lightgray;
+}
+
+bb {
+  color: inherit;
+  text-decoration: none;
+  align-items: end;
+}
+
+.btn {
+  background-color: white;
+  padding: 1em 1.5em;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.submitButton {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  padding: 10px 23px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: black;
+  color: white;
+}
+
+.inputEmail {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: inherit;
+    width: 100%;
+    height: auto;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    color: black;
+    background: white;
+    text-transform: unset;
+    text-rendering: optimizeLegibility;
+  }
