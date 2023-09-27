@@ -176,7 +176,7 @@ Join us on this exhilarating journey as we transform Sugarcane AI into a powerfu
 
 ## License 📄 <a name="license--"></a>
 
-Sugarcane AI is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Sugarcane AI is licensed under Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments 🙏 <a name="acknowledgments--"></a>
 
