@@ -2,7 +2,7 @@
   <img src="public/images/sugar/AI 3.png" alt="Sugarcane AI Logo" width="400">
 </p>
 
-# Sugarcane AI: Microservices Framework for LLM Agnostic App Development 🤖
+# Sugarcane AI: Open Source Microservices Framework for LLM App Development 🤖
 
 [![License](https://img.shields.io/github/license/sugarcane-ai/sugarcane-ai.github.io)](https://github.com/sugarcane-ai/sugarcane-ai.github.io/blob/develop/LICENSE)
 
@@ -82,9 +82,12 @@ Explore our [Documentation](documentation_link) for detailed instructions on get
 
 Watch our demo videos on [https://sugarcaneai.dev/demo/](https://sugarcaneai.dev/demo/) for examples of how Sugarcane AI's solutions can supercharge your AI app development.
 
-### Demo - Prompt Packages 🤖
+#### Demo Video : Docouple you Prompts from Application
 
-[![Demo Video](demo_thumbnail.png)](https://youtu.be/7_kOPHUACgE)
+<br>
+<a href="https://www.youtube.com/watch?v=ns0UWOv-xGo">
+  <img src="https://img.youtube.com/vi/ns0UWOv-xGo/maxresdefault.jpg" alt="Video Thumbnail" width="800" height="360">
+</a>
 
 ## 🤖 Contribute <a name="contribute--"></a>
 
@@ -98,9 +101,7 @@ Contribute to Sugarcane AI with the following steps:
 4. Push your changes to your forked repository.
 5. Open a pull request, and we'll review your contributions.
 
-## 🤖 Contributors
-
-## Contributors
+## 👨‍💻 Contributors
 
 Thanks to the following contributors for their efforts and support in adding value to the project.
 
