@@ -145,7 +145,7 @@ Stay updated with the latest news, discussions, and support on our communities.
 
 - 🌐 [LinkedIn](https://www.linkedin.com/company/sugarcane-ai/)
 - 🐦 [Twitter](https://twitter.com/sugarcaneai)
-- 💬 [Discord](https://discord.com/invite/WRu3KXqz)
+- 💬 [Discord](https://discord.gg/gSZySSRK)
 
 ## 📅 Book an Appointment <a name="book-an-appointment--"></a>
 
@@ -168,7 +168,6 @@ Next, we're turning our focus to the Workflow Layer. Brace yourself for a user-f
 The Marketplace Layer is where the magic happens. We're enhancing this core component to allow you to package, share, and reuse workflows, prompts, and datasets effortlessly across the developer ecosystem, fostering collaboration and innovation across the community.
 
 ![Roadmap](public/images/sugar/Roadmap.png)
-
 
 Join us on this exhilarating journey as we transform Sugarcane AI into a powerful and user-friendly platform for Micro LLM-driven workflow automation solutions tailored to developers like you.
 
