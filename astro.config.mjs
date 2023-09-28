@@ -16,7 +16,13 @@ export default defineConfig({
   site: config.site.base_url ? config.site.base_url : "http://examplesite.com",
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
-  integrations: [react(), sitemap(), tailwind({
+  integrations: [
+    react(), 
+    sitemap({
+      filter: (page) => !page.startsWith('https://sugarcaneai.dev/x')
+      // filter: (page) => page !== 'https://stargazers.club/secret-vip-lounge/',
+    }), 
+    tailwind({
     config: {
       applyBaseStyles: false
     }
