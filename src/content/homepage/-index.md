@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Microservices Framework for LLMs"
-  content: "Build, Train, and Manage Workflow Plugins using Micro LLMs"
+  content: "Build, Train, and Manage Workflow Plugins using Micro LLM"
   # image: "/images/banner.png"
   image: "/images/sugar/workflow-dark-4.png"
   button:
@@ -26,6 +26,20 @@ features:
       enable: false
       label: "Join Waitlist"
       link: "#"
+    waitlist:
+      enable: true
+
+  - title: "Key Components of Framework!"
+    image: "/images/sugar/prompt_packages-3.png"
+    content: "Sugar Bakery"
+    bulletpoints:
+      - "Write workflows in few lines of code"
+      - "No need to hardcode prompts in your code"
+      # - ""
+    button:
+      enable: false
+      label: "Join Waitlist"
+      link: "https://github.com/zeon-studio/Sugarcane AI"
     waitlist:
       enable: true
     
