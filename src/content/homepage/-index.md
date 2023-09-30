@@ -2,17 +2,15 @@
 # Banner
 banner:
   title: "Open Source Microservices Framework for cross LLM Apps"
-  content: "Develop reliable cross-LLM workflows and plugins by harnessing the power of managed prompt packages and Micro LLM"
-  image: "/images/sugar/bannerfinal.png."
-  # image: "/images/sugar/.png"
-  # image: "/images/sugar/workflow-dark-4.png"
+  content: "Develop reliable cross-LLM workflows and plugins by harnessing the power of managed prompt packages and Micro LLMs."
+  # image: "/images/banner.png"
+  image: "/images/sugar/bannerfinal.png"
   button:
     enable: false
     label: "Join Waitlist"
     link: "#"
   waitlist:
     enable: true
-
 # Features
 features:
   - 
@@ -62,7 +60,7 @@ features:
       link: "#"
     waitlist:
       enable: true
-    
+
     title2: "Sugar Hub for All"
     # image: "/images/sugar/prompt_packages-3.png"
     content2: "A prompt package is a collection of prompt templates, dataset, and llm configuration that can be distributed as a unit of reusable prompt or functionality in the LLM ecosystem. A prompt template is tied to a specific LLM config for high accuracy"
