@@ -7,6 +7,16 @@ const { features } = Astro.props;
 
 ---
 <!-- Features -->
+
+<section class="section p-0 bg-gradient">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="text-center lg:col-8">
+          <h1 set:html={markdownify("Key Components of Framework")} class="" />
+        </div>
+      </div>
+    </div>
+</section>
 {   
     
     features.map((feature, index: number) => (

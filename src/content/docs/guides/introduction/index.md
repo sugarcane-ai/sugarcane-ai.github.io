@@ -1,6 +1,6 @@
 ---
 title: Introduction to Sugarcane AI 🤖
-description: Open Source Microservices Framework for LLM App Development
+description: Learn how to use Microservices Framework for LLM App Development
 ---
 
 ### Open Source Microservices Framework for LLM Agnostic App Development 🚀
@@ -9,17 +9,43 @@ Sugarcane AI is an open-source Microservices framework for LLM-agnostic workflow
 
 With a focus on fine-tuned Language Models (LLMs), prompt management, and Workflow Plugins, Sugarcane AI encourages collaborative dataset development and enhances reusability of prompt packages and fine-tuned LLMs, facilitating sharing and monetization on an open marketplace.
 
-#### Data Scientists
+### Key Components of Sugarcane AI Framework ###
 
-LLM as a Service for data labelling and fine-tuning, 
+#### Sugar Factory 🏭 ####
 
-#### Prompt developers
+##### No-code Playground for **Prompt Developers** for faster & efficient prompt engineering #####
 
-Prompt as a Service for Prompt developers, streamlining prompt management, and 
+##### Key Features : #####
+    - Build and ship your prompts over APIs
+    - Label and manage prompt completion datasets
+    - Version and backtest prompts for better performance
 
-#### Application Developers
+#### Sugar Farm 🚜 ####
 
-Workflow as a Service for Plugin developers to construct workflow plugins, facilitating the distribution of LLM, Prompts, and Plugins via APIs.
+##### No-code Playground for **Prompt Developers** for faster & efficient prompt engineering #####
+
+##### Key Features : #####
+        - Train and backtest Micro LLMs using labeled datasets
+        - Version and ship Fine tuned LLMs over APIs
+        - Publish fine-tuned Micro LLMs on Sugar Hub
+
+#### Sugar Bakery 🍞 ####
+
+##### No-code Playground for **Prompt Developers** for faster & efficient prompt engineering #####
+
+##### Key Features : #####
+    - Implement workflows/plugins with just a few lines of code
+    - Client libraries supporting multiple languages
+    - Integrate managed prompt packages from Sugar Hub
+
+#### Sugar Hub 🏛️ ####
+
+##### No-code Playground for **Prompt Developers** for faster & efficient prompt engineering #####
+
+##### Key Features : #####
+    - Build and ship your prompts over APIs
+    - Label and manage prompt completion datasets
+    - Version and backtest prompts for better performance
 
 
 
