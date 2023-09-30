@@ -3,8 +3,9 @@
 banner:
   title: "Microservices Framework for LLMs"
   content: "Build, Train, and Manage Workflow Plugins using Micro LLM"
-  # image: "/images/banner.png"
-  image: "/images/sugar/workflow-dark-4.png"
+  image: "/images/sugar/bannerfinal.png"
+  # image: "/images/sugar/.png"
+  # image: "/images/sugar/workflow-dark-4.png"
   button:
     enable: false
     label: "Join Waitlist"
