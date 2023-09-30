@@ -8,11 +8,11 @@ const { features } = Astro.props;
 ---
 <!-- Features -->
 
-<section class="section p-0 bg-gradient">
+<section class="section p-2 bg-gradient">
     <div class="container">
       <div class="row justify-center">
         <div class="text-center lg:col-8">
-          <h1 set:html={markdownify("Key Components of Framework")} class="" />
+          <h2 set:html={markdownify("Key Components of Framework")} class="" />
         </div>
       </div>
     </div>
@@ -57,7 +57,7 @@ const { features } = Astro.props;
                     )}
                 </div>)}
                 {!feature.image && (
-                    <div class={`md:col-6 lg:col-6 mb-10`}>   
+                    <div class={`md:col-6 lg:col-6 ml-0`}>   
                         <h2 set:html={markdownify(feature.title)} class="mb-4" />
                         <p set:html={markdownify(feature.content)} class="mb-8 text-lg" />
                         <ul>
@@ -77,7 +77,7 @@ const { features } = Astro.props;
                             <JoinWaitlist client:load></JoinWaitlist>
                         )}
                     </div>
-                    <div class={`md:col-6 lg:col-6 mt-5`}>
+                    <div class={`md:col-6 lg:col-6 ml-0`}>
                         <h2 set:html={markdownify(feature.title2)} class="mb-4" />
                         <p set:html={markdownify(feature.content2)} class="mb-8 text-lg" />
                         <ul>
@@ -97,6 +97,8 @@ const { features } = Astro.props;
                             <JoinWaitlist client:load></JoinWaitlist>
                         )}
                     </div>)}
+
+                    
                 
                 </div>
             </div>

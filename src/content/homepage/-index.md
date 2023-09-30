@@ -13,8 +13,7 @@ banner:
     enable: true
 # Features
 features:
-  - 
-    title: "Sugar Factory 🏭"
+  - title: "Sugar Factory 🏭"
     image: false
     # image: "/images/sugar/prompt_packages-3.png"
     content: "No-code Playground for **Prompt Developers** for faster & efficient prompt engineering"
