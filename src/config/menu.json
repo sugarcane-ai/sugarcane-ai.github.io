@@ -1,9 +1,16 @@
 {
   "main": [
-    
+    {
+      "name": "Docs",
+      "url": "/docs"
+    }
+
   ],
 
   "footer": [
-   
+    {
+      "name": "Privacy",
+      "url": "/privacy-policy"
+    }
   ]
 }
