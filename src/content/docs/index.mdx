@@ -1,0 +1,34 @@
+---
+# title: Welcome to Sugarcane AI
+# description: Get started building your docs site with Starlight.
+# template: splash
+# hero:
+#   tagline: Supercharge your LLM Apps with APIs!
+#   image:
+#     file: ../../assets/houston.webp
+  actions:
+    - text: View Docs
+      link: /docs/guides
+      icon: right-arrow
+      variant: primary
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Welcome to Sugarcane AI
+#### Supercharge your LLM Apps with APIs!
+
+<CardGrid stagger>
+    <Card title="Create Prompt Packages" icon="pencil">
+        Create Prompt Packages - Build, test & Version your prompts
+    </Card>
+    <Card title="Publish Prompt Packages" icon="add-document">
+        Publish your Prompt Packages over API
+    </Card>
+    <Card title="Fine-Tune your Prompts" icon="setting">
+        Refine and Fine-tune your prompt using labelled datasets
+    </Card>
+    <Card title="Monetize Prompt Packages" icon="open-book">
+        Share and Monetize your Prompt packages over Marketplace
+    </Card>
+</CardGrid>

@@ -23,7 +23,6 @@ if (Astro.request.method === "POST") {
       errors.email += "Email is not valid. ";
     }
 
-    console.log("subscribe", email);
     await fetch(`${host}/api/email-signup`, {
       method: "POST",
       headers: {
@@ -67,8 +66,6 @@ if (Astro.request.method === "POST") {
                 set:html={markdownify(call_to_action.data.description)}
                 class="mb-6"
               />
-
-              
 
               {call_to_action.data.button.enable && !result.subscribed && (
                 <JoinWaitlist client:load></JoinWaitlist>
