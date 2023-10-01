@@ -101,7 +101,6 @@ features:
     waitlist:
       enable: true
 
-
   # - title: "The Top Reasons to Choose Astro for Your Next Project"
   #   image: "/images/service-2.png"
   #   content: "With Astro, you can build modern and content-focused websites without sacrificing performance or ease of use."

@@ -46,7 +46,7 @@ export default defineConfig({
       title: 'Sugarcane AI Docs',
       // favicon: '/public/images/sugar/favicon.png',
       editLink: {
-				baseUrl: 'https://github.com/sugarcane-ai/sugarcane-ai.github.io/edit/main/src/content/docs/',
+				baseUrl: 'https://github.com/sugarcane-ai/sugarcane-ai.github.io/edit/main/',
 			},
       logo: {
 				light: '/public/images/sugar/logos/full-small.png',
@@ -71,17 +71,6 @@ export default defineConfig({
 					attrs: { property: 'twitter:image', content: site + '/public/images/sugar/logos/full-small.png' },
 				},
 			],
-      sidebar: [
-        {
-          label: 'Sugarcane AI',
-          items: [
-            { label: 'Main', link: '/docs/guides/' },
-            { label: 'Get Started', link: '/docs/guides/get_started/' },
-            { label: 'Architecture', link: '/docs/guides/architecture/', badge: { text: 'New', variant: 'tip' } },
-          ],
-        }
-      ],
-      
       customCss: [
 				// Relative path to your custom CSS file
 				'./src/styles/startlight.scss',
@@ -91,6 +80,7 @@ export default defineConfig({
         {
           label: 'Sugarcane AI',
           type: 'category',
+          collapsed: true,
           items: [
             { label: 'Introduction 🙏', link: '/docs/guides/introduction' },
             // { label: 'QuickStart', link: '/docs/guides/installation/' },
@@ -109,7 +99,8 @@ export default defineConfig({
         },
         {
           label: 'Examples',
-          type: 'doc',
+          type: 'category',
+          collapsed: true,
           items: [
             { label: 'Demo Videos 📺', link: '/docs/guides/demo/' },
           ],
@@ -117,14 +108,16 @@ export default defineConfig({
 
         {
           label: 'Roadmap',
-          type: 'doc',
+          type: 'category',
+          collapsed: true,
           items: [
             { label: 'Roadmap 🗺️', link: '/docs/guides/roadmap/' },
           ],
         },
         {
           label: 'Connect',
-          type: 'doc',
+          type: 'category',
+          collapsed: true,
           items: [
             { label: 'Connect 🌐', link: '/docs/guides/connect/' },
           ],
@@ -137,15 +130,17 @@ export default defineConfig({
         //     { label: 'How to 2', link: '/docs/guides/howto_2/' },
         //   ],
         // },
-        {
-          label: 'Contribution',
-          items: [
-            { label: 'How to Contribute 🤝', link: '/docs/guides/contribute' },
-            { label: 'Contributors 👨‍💻', link: '/docs/guides/contributors/' },
-          ],
-        },
+        // {
+        //   label: 'Contribution',
+        //   collapsed: true,
+        //   items: [
+        //     { label: 'How to Contribute 🤝', link: '/docs/guides/contribute' },
+        //     { label: 'Contributors 👨‍💻', link: '/docs/guides/contributors/' },
+        //   ],
+        // },
         {
           label: 'Licence',
+          collapsed: true,
           items: [
             { label: 'Licence', link: '/docs/guides/licence' },
           ],
