@@ -7,6 +7,7 @@ import Footer from "@/partials/Footer.astro";
 import Header from "@/partials/Header.astro";
 import "@/styles/main.scss";
 import { GoogleAnalytics } from 'astro-google-analytics';
+import Sticky from "@/layouts/partials/Sticky.astro";
 
 // font families
 const pf = theme.fonts.font_family.primary;
@@ -25,6 +26,8 @@ export interface Props {
 // distructure frontmatters
 const { title, meta_title, description, image, noindex, canonical } =
   Astro.props;
+
+
 ---
 
 <!DOCTYPE html>
@@ -140,6 +143,7 @@ const { title, meta_title, description, image, noindex, canonical } =
       }`}
     />
     <meta name="twitter:card" content="summary_large_image" />
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
   <body>
     <TwSizeIndicator />
@@ -148,6 +152,27 @@ const { title, meta_title, description, image, noindex, canonical } =
       <slot />
     </main>
     <Footer />
-    <script async>(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='bb5ec0eb70ce99e835d81109a11d504011cf234edda576dd0dc2f667bbae1d23';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script>
+    <Sticky/>
+    <script src="https://unpkg.com/@reecem/h-bar?umd" defer></script>
+    <script>
+        hBar.init({
+            url: "http://blog.example.com/wp-json/wp/v2/posts?per_page=1&_fields=id,excerpt,title,link",
+            secondaryLinks: [
+                {
+                    title: "Docs",
+                    link: "http:://docs.example.com"
+                },
+                {
+                    title: "Support",
+                    link: "http://help.example.com"
+                }
+            ],
+            options: {
+                theme: "blue",
+            }
+        });
+
+        hBar.fetchData()
+    </script>
   </body>
 </html>
