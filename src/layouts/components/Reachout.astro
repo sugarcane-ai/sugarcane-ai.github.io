@@ -1,0 +1,23 @@
+---
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import config from "@/config/config.json";
+import JoinWaitlist from '@/layouts/SingupForm';
+const { links } = config;
+---
+<CardGrid>
+    <Card title="WaitList" icon="star">
+        <p>Sign up to our waitlist to get early access. <JoinWaitlist client:load klass="" styles={{}}></JoinWaitlist></p>
+    </Card>
+    <Card title="Discord" icon="discord">
+        <p>Join our Discord server for latest updates and community support.</p>
+        <a target="_blank" href={links.discord}>Join Discord</a>
+    </Card>
+    <Card title="Github" icon="github">
+        <p>Check our codebase and contribute to the project.</p>
+        <a target="_blank" href={links.github}>Visit GitHub</a>
+    </Card>
+    <Card title="Email" icon="pencil">
+        <p>Reach out to us at <a href={'mailto:' + links.email}>{links.email}</a></p>
+    </Card>
+    
+</CardGrid>

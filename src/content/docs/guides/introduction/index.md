@@ -2,7 +2,6 @@
 title: Introduction to Sugarcane AI 🤖
 description: Learn how to use Microservices Framework for LLM App Development
 ---
-
 ### Open Source Microservices Framework for LLM Agnostic App Development 🚀
 
 Sugarcane AI is an open-source Microservices framework for LLM-agnostic workflow plugin development, allowing developers to prioritize business logic over LLM selection, cost, and performance. 
@@ -55,4 +54,6 @@ With a focus on fine-tuned Language Models (LLMs), prompt management, and Workfl
 Here you'll find resources and guides for the Sugarcane AI's platform. Please don't hesitate to contact us at hi@sugarcaneai.dev for futher queries.
 
 
+import Reachout from "@/layouts/components/Reachout.astro";
 
+<Reachout/>

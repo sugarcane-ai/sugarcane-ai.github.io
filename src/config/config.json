@@ -44,10 +44,18 @@
     "settings": {}
   },
 
+  
+
   "metadata": {
     "meta_author": "Sugarcane AI",
     "meta_image": "/images/og-image.png",
     "meta_description": "An open-source framework for teams, designed to separate concerns among various roles such as data scientists, prompt developers, and app developers. It enables the creation of workflow apps, prompt management, and fine-tuning of large language models (LLMs)"
+  },
+
+  "links": {
+    "github": "https://github.com/sugarcane-ai/sugarcane-ai",
+    "discord": "https://discord.gg/7Fe4GXQjRQ",
+    "email": "hi@sugarcaneai.dev"
   },
 
   "social": [
