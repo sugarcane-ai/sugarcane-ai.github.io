@@ -20,11 +20,10 @@ export default defineConfig({
   integrations: [
     
     react(),
-    // 
-    sitemap({
-      filter: (page) => !page.startsWith('https://sugarcaneai.dev/x')
-      // filter: (page) => page !== 'https://stargazers.club/secret-vip-lounge/',
-    }),
+
+    // sitemap({
+    //   filter: (page) => !page.startsWith('https://sugarcaneai.dev/x')
+    // }),
     
     tailwind({
       config: {
