@@ -3,6 +3,10 @@
     {
       "name": "Docs",
       "url": "/docs"
+    },
+    {
+      "name": "Demo",
+      "url": "/demo"
     }
 
   ],
