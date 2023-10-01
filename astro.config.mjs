@@ -45,7 +45,7 @@ export default defineConfig({
     // mdx(),
     starlight({
       title: 'Sugarcane AI Docs',
-      favicon: '/public/images/sugar/favicon.png',
+      // favicon: '/public/images/sugar/favicon.png',
       editLink: {
 				baseUrl: 'https://github.com/sugarcane-ai/sugarcane-ai.github.io/edit/main/src/content/docs/',
 			},
@@ -72,16 +72,21 @@ export default defineConfig({
 					attrs: { property: 'twitter:image', content: site + '/public/images/sugar/logos/full-small.png' },
 				},
 			],
-      // sidebar: [
-      //   {
-      //     label: 'Sugarcane AI',
-      //     items: [
-      //       { label: 'Main', link: '/docs/guides/' },
-      //       { label: 'Get Started', link: '/docs/guides/get_started/' },
-      //       { label: 'Architecture', link: '/docs/guides/architecture/', badge: { text: 'New', variant: 'tip' } },
-      //     ],
-      //   }
-      // ]
+      sidebar: [
+        {
+          label: 'Sugarcane AI',
+          items: [
+            { label: 'Main', link: '/docs/guides/' },
+            { label: 'Get Started', link: '/docs/guides/get_started/' },
+            { label: 'Architecture', link: '/docs/guides/architecture/', badge: { text: 'New', variant: 'tip' } },
+          ],
+        }
+      ],
+      
+      customCss: [
+				// Relative path to your custom CSS file
+				'./src/styles/startlight.scss',
+			],
       
       sidebar: [
         {
@@ -95,6 +100,7 @@ export default defineConfig({
         {
           label: 'Architecture',
           type: 'category',
+          collapsed: true,
           items: [
             { label: 'Microservices Framework 🔧', link: '/docs/guides/framework/' },
             { label: 'Micro LLMs 🧬', link: '/docs/guides/microllm/' },
