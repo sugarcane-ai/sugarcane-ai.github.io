@@ -100,7 +100,6 @@ export default defineConfig({
             { label: 'Micro LLMs 🧬', link: '/docs/guides/microllm/' },
             { label: 'Prompt Packages 📦', link: '/docs/guides/packages/' },
             { label: 'Prompt Templates 📑', link: '/docs/guides/templates/' },
-            { label: 'Marketplace 🛒', link: '/docs/guides/marketplace/' },
           ],
         },
         {

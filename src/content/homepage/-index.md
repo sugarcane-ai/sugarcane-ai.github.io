@@ -76,7 +76,7 @@ features:
   
   - title: "What are Prompt Packages?"
     image: "/images/sugar/prompt-package-3.png"
-    content: "A prompt package is a collection of prompt templates, dataset, and llm configuration that can be distributed as a unit of reusable prompt or functionality in the LLM ecosystem. A prompt template is tied to a specific LLM config for high accuracy"
+    content: "A prompt package is a collection of prompt templates, dataset, and LLM configuration that can be distributed as a unit of reusable prompt or functionality in the LLM ecosystem. A prompt template is tied to a specific LLM config for high accuracy"
     bulletpoints:
       - "Enables reusability and sharing"
       - "No need to develop prompts from scratch"

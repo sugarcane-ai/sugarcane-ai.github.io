@@ -16,36 +16,43 @@ With a focus on fine-tuned Language Models (LLMs), prompt management, and Workfl
 ##### No-code Playground for **Prompt Developers** for faster & efficient prompt engineering #####
 
 ##### Key Features : #####
+
     - Build and ship your prompts over APIs
     - Label and manage prompt completion datasets
     - Version and backtest prompts for better performance
 
-#### Sugar Farm 🚜 ####
-
-##### No-code Playground for **Prompt Developers** for faster & efficient prompt engineering #####
-
-##### Key Features : #####
-        - Train and backtest Micro LLMs using labeled datasets
-        - Version and ship Fine tuned LLMs over APIs
-        - Publish fine-tuned Micro LLMs on Sugar Hub
-
 #### Sugar Bakery 🍞 ####
 
-##### No-code Playground for **Prompt Developers** for faster & efficient prompt engineering #####
+##### SDK for **Application Develpers** to develop cross-LLM business logic applications #####
 
 ##### Key Features : #####
+
     - Implement workflows/plugins with just a few lines of code
     - Client libraries supporting multiple languages
     - Integrate managed prompt packages from Sugar Hub
 
-#### Sugar Hub 🏛️ ####
+#### Sugar Farm 🚜 ####
 
-##### No-code Playground for **Prompt Developers** for faster & efficient prompt engineering #####
+##### Data Assistant for **Data Scientists** to build Micro LLMs #####
 
 ##### Key Features : #####
-    - Build and ship your prompts over APIs
-    - Label and manage prompt completion datasets
-    - Version and backtest prompts for better performance
+
+    - Train and backtest Micro LLMs using labeled datasets
+    - Version and ship Fine tuned LLMs over APIs
+    - Publish fine-tuned Micro LLMs on Sugar Hub
+
+#### Sugar Hub 🛒  ####
+
+##### Managed Marketplace for high quality GenAI assets #####
+
+##### Key Features : #####
+
+    - Publish, share and monetise your prompt packages
+    - Discover and use managed prompts in Sugar Bakery
+    - Leverage Open datasets and Finetuned Micro LLMs
+
+
+Here you'll find resources and guides for the Sugarcane AI's platform. Please don't hesitate to contact us at hi@sugarcaneai.dev for futher queries.
 
 
 
