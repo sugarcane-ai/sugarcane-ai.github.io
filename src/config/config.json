@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Sugarcane AI - Open Source Microservices Framework for LLMs agnostic Workflow Plugins",
+    "title": "Sugarcane AI - Open Source Microservices Framework for cross-LLMs Apps",
     "base_url": "https://sugarcaneai.dev",
     "base_path": "/",
     "trailing_slash": false,
@@ -44,8 +44,6 @@
     "settings": {}
   },
 
-  
-
   "metadata": {
     "meta_author": "Sugarcane AI",
     "meta_image": "/images/og-image.png",
@@ -59,6 +57,11 @@
   },
 
   "social": [
+    {
+      "name": "github",
+      "icon": "FaGithub",
+      "link": "https://github/sugarcane-ai/sugarcane-ai"
+    }, 
     {
       "name": "discord",
       "icon": "FaDiscord",
