@@ -1,0 +1,22 @@
+---
+title: Product Roadmap 🗺️
+description: Learn to make Prompt Packages with Sugarcane AI Framework
+---
+Our roadmap for Sugarcane AI is structured around three critical layers within the LLM ecosystem, each designed to empower data scientists and prompt & application developers:
+
+### 1. Prompt Layer 📑
+
+In this phase, we're doubling down on the Prompt Layer. Our mission is to equip you with robust tools for efficient dataset management, prompt control, and Micro LLM training. Expect precise and high-accuracy prompts at your fingertips.
+
+### 2. Workflow Layer 🚀
+
+Next, we're turning our focus to the Workflow Layer. Brace yourself for a user-friendly UI toolkit that simplifies workflow design, deployment, and integration. We're making it effortless to build workflows into web, mobile, and chat applications.
+
+### 3. Marketplace Layer 🌐
+
+The Marketplace Layer is where the magic happens. We're enhancing this core component to allow you to package, share, and reuse workflows, prompts, and datasets effortlessly across the developer ecosystem, fostering collaboration and innovation across the community.
+
+![Roadmap](public/images/sugar/Roadmap.png)
+
+
+Join us on this exhilarating journey as we transform Sugarcane AI into a powerful and user-friendly platform for Micro LLM-driven workflow automation solutions tailored to developers like you.

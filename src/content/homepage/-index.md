@@ -1,40 +1,84 @@
 ---
 # Banner
 banner:
-  title: "Microservices Framework for LLMs"
-  content: "Build, Train, and Manage Workflow Plugins using Micro LLMs"
+  title: "Open Source Microservices Framework for LLM Apps"
+  content: "Develop reliable cross-LLM workflows and plugins powered by prompt packages and Micro LLMs"
   # image: "/images/banner.png"
-  image: "/images/sugar/workflow-dark-4.png"
+  image: "/images/sugar/bannerfinal.png"
   button:
     enable: false
     label: "Join Waitlist"
     link: "#"
   waitlist:
     enable: true
-
 # Features
 features:
-  - title: "An Open Source Framework for Developer Teams"
-    image: "/images/service-1.png"
-    content: "Sugarcane AI provides a Microservices Framework for LLM-agnostic workflow plugin development, allowing developers to prioritize business logic over LLM selection, cost, and performance"
+  - title: "Sugar Factory 🏭"
+    image: false
+    # image: "/images/sugar/prompt_packages-3.png"
+    content: "No-code Playground for **Prompt Developers** for faster & efficient prompt engineering"
     bulletpoints:
-      - "Workflow As a Service for Plugin Developers"
-      - "Prompts As a Service for Prompt Developers"
-      - "LLMs As a Service for Data Scientists"
-      - "Open Marketpalce to Package, Share Reuse & Monetize task specific Prompt packages, Micro LLMs & Datasets"
+      - "Build and ship your prompts over APIs."
+      - "Label and manage prompt completion datasets."
+      - "Version and backtest prompts for better performance."
+
+    button:
+      enable: true
+      label: "View Demo"
+      link: "/demo"
+    waitlist:
+      enable: false
+
+    title2: "Sugar Bakery 🍞"
+    content2: "SDK for **Application Develpers** to develop cross-LLM business logic applications"
+    bulletpoints2:
+      - "Implement workflows/plugins with just a few lines of code."
+      - "Client libraries supporting multiple languages."
+      - "Integrate managed prompt packages from Sugar Hub"
+
+    button2:
+      enable: false
+      label: "Join Waitlist"
+      link: "#"
+    waitlist2:
+      enable: true
+  
+  
+  - title: "Sugar Farm  🚜"
+    image: false
+    content: "Data Assistant for **Data Scientists** to build Micro LLMs"
+    bulletpoints:
+      - "Train and backtest Micro LLMs using labeled datasets."
+      - "Version and ship Fine tuned LLMs over APIs."
+      - "Publish fine-tuned Micro LLMs on Sugar Hub."
+
     button:
       enable: false
       label: "Join Waitlist"
       link: "#"
     waitlist:
       enable: true
-    
+
+    title2: "Sugar Hub 🛒"
+    # image: "/images/sugar/prompt_packages-3.png"
+    content2: "Managed Marketplace for high quality GenAI assets" 
+    bulletpoints2:
+      - "Publish, share and monetise your prompt packages"
+      - "Discover and use managed prompts in Sugar Bakery"
+      - "Leverage Open datasets and Finetuned Micro LLMs"
+    button2:
+      enable: false
+      label: "Join Waitlist"
+      link: "https://github.com/zeon-studio/Sugarcane AI"
+    waitlist2:
+      enable: true
+  
   - title: "What are Prompt Packages?"
-    image: "/images/sugar/prompt_packages-3.png"
-    content: "A prompt package is a collection of prompt templates, dataset, and llm configuration that can be distributed as a unit of reusable prompt or functionality in the LLM ecosystem. A prompt template is tied to a specific LLM config for high accuracy"
+    image: "/images/sugar/prompt-package-3.png"
+    content: "A prompt package is a collection of prompt templates, dataset, and LLM configuration that can be distributed as a unit of reusable prompt or functionality in the LLM ecosystem. A prompt template is tied to a specific LLM config for high accuracy"
     bulletpoints:
-      - "Enables Package of prompts and share with teams"
-      - "Can be distributed via API"
+      - "Enables reusability and sharing"
+      - "No need to develop prompts from scratch"
       - "Together with a Micro LLM, it can deliver exceptionally high performance."
     button:
       enable: false
@@ -42,9 +86,9 @@ features:
       link: "https://github.com/zeon-studio/Sugarcane AI"
     waitlist:
       enable: true
-
+  
   - title: "What are Micro LLMs?"
-    image: "/images/service-2.png"
+    image: "/images/sugar/micro-llm-comparison.png"
     content: "Micro LLMs are smaller fine tuned model build on top of 3b/7b parameters and trained for task specific prompts, which can be used to automate workflows/plugins to ensure their reliability and accuracy"
     bulletpoints:
       - "Very High Accuracy for Task Specific Prompts"
@@ -57,7 +101,6 @@ features:
     waitlist:
       enable: true
 
-  
 
   # - title: "The Top Reasons to Choose Astro for Your Next Project"
   #   image: "/images/service-2.png"

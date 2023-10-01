@@ -1,0 +1,17 @@
+:root {
+    .sidebar-content{
+        summary {
+            display: flex
+        }
+    }
+    
+    starlight-theme-select {
+        select {
+            display: flex;
+            background-color: transparent;
+            padding-left: 20px;
+            background-image: none;
+        }
+    }
+    
+}
