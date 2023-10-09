@@ -153,26 +153,5 @@ const { title, meta_title, description, image, noindex, canonical } =
     </main>
     <Footer />
     <Sticky/>
-    <script src="https://unpkg.com/@reecem/h-bar?umd" defer></script>
-    <script>
-        hBar.init({
-            url: "http://blog.example.com/wp-json/wp/v2/posts?per_page=1&_fields=id,excerpt,title,link",
-            secondaryLinks: [
-                {
-                    title: "Docs",
-                    link: "http:://docs.example.com"
-                },
-                {
-                    title: "Support",
-                    link: "http://help.example.com"
-                }
-            ],
-            options: {
-                theme: "blue",
-            }
-        });
-
-        hBar.fetchData()
-    </script>
   </body>
 </html>
