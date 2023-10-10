@@ -13,6 +13,7 @@ import {
   FaRegFolder,
   FaRegUserCircle,
 } from "react-icons/fa/index.js";
+// import Reachout from "@/layouts/components/Reachout.astro";
 
 const { blog_folder } = config.settings;
 const posts = await getSinglePage(blog_folder);
@@ -91,9 +92,10 @@ const { title, description, author, categories, image, date, tags } = post.data;
               className="social-icons"
               title={title}
               description={description}
-              slug={post.slug}
+              slug={`blog/${post.slug}`}
             />
           </div>
+          <!-- <Reachout/> -->
         </div>
         <Disqus className="mt-20" client:load />
       </article>

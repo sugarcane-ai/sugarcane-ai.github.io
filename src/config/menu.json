@@ -5,12 +5,14 @@
       "url": "/docs"
     },
     {
+      "name": "Blog",
+      "url": "/blog"
+    },
+    {
       "name": "Demo",
       "url": "/demo"
     }
-
   ],
-
   "footer": [
     {
       "name": "Privacy",
