@@ -9,9 +9,9 @@
 1. [Introduction](#introduction--)
 2. [Key Features of Microservices Framework](#key-features--)
 3. [Key Components of the Microservices Framework](#key-components--)
-    - [1. Micro LLMs 🧬](#micro-llms--)
-    - [2. Prompt Packages 📦](#prompt-packages--)
-    - [3. Prompt Templates 📑](#prompt-templates--)
+   - [1. Micro LLMs 🧬](#micro-llms--)
+   - [2. Prompt Packages 📦](#prompt-packages--)
+   - [3. Prompt Templates 📑](#prompt-templates--)
 4. [Why Microservices Architecture?](#microservices-architecture--)
 5. [Getting Started](#getting-started--)
 6. [Demo Videos](#demo-videos--)
@@ -61,15 +61,19 @@ Sugarcane AI’s microservices architecture for LLM applications offers a game-c
 ![Mono Vs Micro Architecture](public/images/sugar/mono-vs-micro.png)
 
 ### Focused Development 🤝
+
 Microservices allow developers to concentrate on specific AI application components, ensuring clean and modular code. Each service has a clear task, simplifying development and scalability.
 
 ### Boosted Collaboration 🤝
+
 Microservices foster collaboration among development teams. Separate teams can work on different services concurrently, accelerating development and innovation for top-notch AI apps.
 
 ### Decoupled Flexibility 🔄
+
 In microservices, prompts, data, and the application layer are decoupled, providing flexibility. Developers can fine-tune LLMs, manage prompts, and handle data independently, enabling rapid experimentation and innovation. 📑
 
 ### Robust Reliability, Scalability, and Maintenance 📈
+
 Microservices offer improved reliability, effortless scalability, and streamlined maintenance, ensuring consistent AI app performance without disruptions, regardless of app size, while allowing efficient updates and bug fixes.
 
 Experience the benefits of clean code, rapid iterations, and improved teamwork—supercharge your AI projects today! 🚀
@@ -82,7 +86,7 @@ Explore our [Documentation](documentation_link) for detailed instructions on get
 
 Watch our demo videos on [https://sugarcaneai.dev/demo/](https://sugarcaneai.dev/demo/) for examples of how Sugarcane AI's solutions can supercharge your AI app development.
 
-#### Demo Video : Docouple you Prompts from Application
+#### Demo Video : Decouple you Prompts from Application
 
 <br>
 <a href="https://www.youtube.com/watch?v=ns0UWOv-xGo">
@@ -169,7 +173,6 @@ The Marketplace Layer is where the magic happens. We're enhancing this core comp
 
 ![Roadmap](public/images/sugar/Roadmap.png)
 
-
 Join us on this exhilarating journey as we transform Sugarcane AI into a powerful and user-friendly platform for Micro LLM-driven workflow automation solutions tailored to developers like you.
 
 ## License 📄 <a name="license--"></a>
@@ -181,4 +184,5 @@ Sugarcane AI is licensed under Apache License 2.0 - see the [LICENSE](LICENSE) f
 We appreciate the contributions from our dedicated community members. You make Sugarcane AI shine! ✨
 
 ---
+
 Join Sugarcane AI in simplifying AI app development. Let's make AI accessible to everyone! 🌐 🚀
