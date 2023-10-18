@@ -108,7 +108,7 @@ features:
     image:
       after: "/images/sugar/micro-image.png"
       before: "/images/sugar/mono-image.png"
-    content: "Breakdown you monolith LLM app using micro services approach into prompt packages and Micro LLMs, to have clear separate of concern with rest to app develoeprs, prompt developer and data scientists."
+    content: "Break down your monolithic LLM app using a Microservices approach into Prompt Packages and Micro LLMs to achieve a clear separation of concerns among app developers, prompt developers, and data scientists."
     bulletpoints:
       - "Faster Knowledge upgradation"
       - "Transparent LLM upgradation for app developers"

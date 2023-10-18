@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Sugarcane AI - Open Source Microservices Framework for cross-LLMs Apps",
+    "title": "Sugarcane AI - Open Source npm like package ecosystem for Prompts to build cross LLM Apps",
     "base_url": "https://sugarcaneai.dev",
     "base_path": "/",
     "trailing_slash": false,
@@ -41,7 +41,7 @@
   "metadata": {
     "meta_author": "Sugarcane AI",
     "meta_image": "/images/og-image.png",
-    "meta_description": "An open-source framework for teams, designed to separate concerns among various roles such as data scientists, prompt developers, and app developers. It enables the creation of workflow apps, prompt management, and fine-tuning of large language models (LLMs)"
+    "meta_description": "Sugarcane AI provides an open-source npm-like package ecosystem for prompts. It offers a comprehensive framework for engineering teams, establishing clear separation of concerns for various roles, including data scientists, prompt developers, and app developers. The platform facilitates the development, training, and commercialization of cross-LLMs apps."
   },
   "links": {
     "github": "https://github.com/sugarcane-ai/sugarcane-ai",
