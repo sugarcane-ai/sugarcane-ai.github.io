@@ -1,16 +1,21 @@
 ---
 # Banner
 banner:
-  title: "Open Source Microservices Framework for LLM Apps"
-  content: "Develop reliable cross-LLM workflows and plugins powered by prompt packages and Micro LLMs"
+  title: "npm like package ecosystem for Prompts"
+  content: "Open Source Framework to build, train and monetise cross LLM and high accuracy Prompt Packages powered by Micro LLMs"
   # image: "/images/banner.png"
-  image: "/images/sugar/banner-micro.png"
+  image: "/images/sugar/banner-new.png"
   button:
-    enable: false
-    label: "Join Waitlist"
-    link: "#"
-  waitlist:
     enable: true
+    label: "Get Started"
+    link: "https://play.sugarcaneai.dev/api/auth/signin?callbackUrl=https%3A%2F%2Fplay.sugarcaneai.dev%2F"
+  button2:
+    enable: true
+    label: "Documentation"
+    link: "/docs"
+  waitlist:
+    enable: false
+
 # Features
 features:
   - title: "Sugar Factory 🏭"
@@ -29,21 +34,19 @@ features:
     waitlist:
       enable: false
 
-    title2: "Sugar Bakery 🍞"
-    content2: "SDK for **Application Develpers** to develop cross-LLM business logic applications"
+    title2: "Sugar Hub 🛒"
+    content2: "**Managed Marketplace** for high quality GenAI assets"
     bulletpoints2:
-      - "Implement workflows/plugins with just a few lines of code."
-      - "Client libraries supporting multiple languages."
-      - "Integrate managed prompt packages from Sugar Hub"
-
+      - "Publish, share and monetise your prompt packages"
+      - "Discover and use managed prompts in Sugar Bakery"
+      - "Leverage Open datasets and Finetuned Micro LLMs"
     button2:
-      enable: false
-      label: "Join Waitlist"
-      link: "#"
-    waitlist2:
       enable: true
-  
-  
+      label: "View Demo"
+      link: "https://github.com/zeon-studio/Sugarcane AI"
+    waitlist2:
+      enable: false
+
   - title: "Sugar Farm  🚜"
     image: false
     content: "Data Assistant for **Data Scientists** to build Micro LLMs"
@@ -59,20 +62,20 @@ features:
     waitlist:
       enable: true
 
-    title2: "Sugar Hub 🛒"
-    # image: "/images/sugar/prompt_packages-3.png"
-    content2: "Managed Marketplace for high quality GenAI assets" 
+    title2: "Sugar Bakery 🍞"
+    content2: "SDK for **Application Develpers** to develop cross-LLM business logic applications"
     bulletpoints2:
-      - "Publish, share and monetise your prompt packages"
-      - "Discover and use managed prompts in Sugar Bakery"
-      - "Leverage Open datasets and Finetuned Micro LLMs"
+      - "Implement workflows/plugins with just a few lines of code."
+      - "Client libraries supporting multiple languages."
+      - "Integrate managed prompt packages from Sugar Hub"
+
     button2:
       enable: false
       label: "Join Waitlist"
-      link: "https://github.com/zeon-studio/Sugarcane AI"
+      link: "#"
     waitlist2:
       enable: true
-  
+
   - title: "What are Prompt Packages?"
     image: "/images/sugar/prompt-package-3.png"
     content: "A prompt package is a collection of prompt templates, dataset, and LLM configuration that can be distributed as a unit of reusable prompt or functionality in the LLM ecosystem. A prompt template is tied to a specific LLM config for high accuracy"
@@ -81,12 +84,12 @@ features:
       - "No need to develop prompts from scratch"
       - "Together with a Micro LLM, it can deliver exceptionally high performance."
     button:
-      enable: false
-      label: "Join Waitlist"
-      link: "https://github.com/zeon-studio/Sugarcane AI"
-    waitlist:
       enable: true
-  
+      label: "Get Started"
+      link: "https://play.sugarcaneai.dev/api/auth/signin?callbackUrl=https%3A%2F%2Fplay.sugarcaneai.dev%2F"
+    waitlist:
+      enable: false
+
   - title: "What are Micro LLMs?"
     image: "/images/sugar/micro-llm-comparison.png"
     content: "Micro LLMs are smaller fine tuned model build on top of 3b/7b parameters and trained for task specific prompts, which can be used to automate workflows/plugins to ensure their reliability and accuracy"
@@ -100,6 +103,24 @@ features:
       link: "#"
     waitlist:
       enable: true
+
+  - title: "Migrate from Monolith to Micro Services Architecture"
+    image:
+      after: "/images/sugar/micro-image.png"
+      before: "/images/sugar/mono-image.png"
+    content: "Breakdown you monolith LLM app using micro services approach into prompt packages and Micro LLMs, to have clear separate of concern with rest to app develoeprs, prompt developer and data scientists."
+    bulletpoints:
+      - "Faster Knowledge upgradation"
+      - "Transparent LLM upgradation for app developers"
+      - "Reusability and collaboration across developer community"
+      - "Decentralised Control"
+      - "Better AI safety"
+    button:
+      enable: true
+      label: "Get Started"
+      link: "https://play.sugarcaneai.dev/api/auth/signin?callbackUrl=https%3A%2F%2Fplay.sugarcaneai.dev%2F"
+    waitlist:
+      enable: false
 
   # - title: "The Top Reasons to Choose Astro for Your Next Project"
   #   image: "/images/service-2.png"
