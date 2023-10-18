@@ -67,8 +67,16 @@ if (Astro.request.method === "POST") {
                 class="mb-6"
               />
 
-              {call_to_action.data.button.enable && !result.subscribed && (
+              {call_to_action.data.waitlist.enable && !result.subscribed && (
                 <JoinWaitlist client:load></JoinWaitlist>
+              )}
+              {call_to_action.data.button.enable && (
+                <a
+                  class="btn btn-primary"
+                  href={call_to_action.data.button.link}
+                >
+                  {call_to_action.data.button.label}
+                </a>
               )}
             </div>
           </div>
