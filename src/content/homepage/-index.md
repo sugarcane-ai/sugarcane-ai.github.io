@@ -9,9 +9,13 @@ banner:
     enable: true
     label: "Get Started"
     link: "https://play.sugarcaneai.dev/api/auth/signin?callbackUrl=https%3A%2F%2Fplay.sugarcaneai.dev%2F"
+  button2:
+    enable: true
+    label: "Documentation"
+    link: "/docs"
   waitlist:
     enable: false
-    
+
 # Features
 features:
   - title: "Sugar Factory 🏭"
@@ -31,7 +35,7 @@ features:
       enable: false
 
     title2: "Sugar Hub 🛒"
-    content2: "**Managed Marketplace** for high quality GenAI assets" 
+    content2: "**Managed Marketplace** for high quality GenAI assets"
     bulletpoints2:
       - "Publish, share and monetise your prompt packages"
       - "Discover and use managed prompts in Sugar Bakery"
@@ -42,7 +46,7 @@ features:
       link: "https://github.com/zeon-studio/Sugarcane AI"
     waitlist2:
       enable: false
-  
+
   - title: "Sugar Farm  🚜"
     image: false
     content: "Data Assistant for **Data Scientists** to build Micro LLMs"
@@ -80,12 +84,12 @@ features:
       - "No need to develop prompts from scratch"
       - "Together with a Micro LLM, it can deliver exceptionally high performance."
     button:
-      enable: false
-      label: "Join Waitlist"
-      link: "https://github.com/zeon-studio/Sugarcane AI"
-    waitlist:
       enable: true
-  
+      label: "Get Started"
+      link: "https://play.sugarcaneai.dev/api/auth/signin?callbackUrl=https%3A%2F%2Fplay.sugarcaneai.dev%2F"
+    waitlist:
+      enable: false
+
   - title: "What are Micro LLMs?"
     image: "/images/sugar/micro-llm-comparison.png"
     content: "Micro LLMs are smaller fine tuned model build on top of 3b/7b parameters and trained for task specific prompts, which can be used to automate workflows/plugins to ensure their reliability and accuracy"
@@ -99,6 +103,24 @@ features:
       link: "#"
     waitlist:
       enable: true
+
+  - title: "Migrate from Monolith to Micro Services Architecture"
+    image:
+      after: "/images/sugar/micro-image.png"
+      before: "/images/sugar/mono-image.png"
+    content: "Breakdown you monolith LLM app using micro services approach into prompt packages and Micro LLMs, to have clear separate of concern with rest to app develoeprs, prompt developer and data scientists."
+    bulletpoints:
+      - "Faster Knowledge upgradation"
+      - "Transparent LLM upgradation for app developers"
+      - "Reusability and collaboration across developer community"
+      - "Decentralised Control"
+      - "Better AI safety"
+    button:
+      enable: true
+      label: "Get Started"
+      link: "https://play.sugarcaneai.dev/api/auth/signin?callbackUrl=https%3A%2F%2Fplay.sugarcaneai.dev%2F"
+    waitlist:
+      enable: false
 
   # - title: "The Top Reasons to Choose Astro for Your Next Project"
   #   image: "/images/service-2.png"

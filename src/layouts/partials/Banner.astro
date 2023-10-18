@@ -19,6 +19,13 @@ const { banner } = Astro.props;
             )
           }
           {
+            banner.button2.enable && (
+              <a class="btn btn-primary ml-2" href={banner.button2.link}>
+                {banner.button2.label}
+              </a>
+            )
+          }
+          {
             banner.waitlist && banner.waitlist.enable && (
               <JoinWaitlist client:load></JoinWaitlist>)
           }
