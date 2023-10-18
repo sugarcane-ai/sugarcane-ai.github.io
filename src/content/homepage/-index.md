@@ -1,16 +1,17 @@
 ---
 # Banner
 banner:
-  title: "Open Source Microservices Framework for LLM Apps"
-  content: "Develop reliable cross-LLM workflows and plugins powered by prompt packages and Micro LLMs"
+  title: "npm like package ecosystem for Prompts"
+  content: "Open Source Framework to build, train and monetise cross LLM and high accuracy Prompt Packages powered by Micro LLMs"
   # image: "/images/banner.png"
-  image: "/images/sugar/banner-micro.png"
+  image: "/images/sugar/banner-new.png"
   button:
-    enable: false
-    label: "Join Waitlist"
-    link: "#"
-  waitlist:
     enable: true
+    label: "Get Started"
+    link: "https://play.sugarcaneai.dev/api/auth/signin?callbackUrl=https%3A%2F%2Fplay.sugarcaneai.dev%2F"
+  waitlist:
+    enable: false
+    
 # Features
 features:
   - title: "Sugar Factory 🏭"
@@ -29,20 +30,18 @@ features:
     waitlist:
       enable: false
 
-    title2: "Sugar Bakery 🍞"
-    content2: "SDK for **Application Develpers** to develop cross-LLM business logic applications"
+    title2: "Sugar Hub 🛒"
+    content2: "**Managed Marketplace** for high quality GenAI assets" 
     bulletpoints2:
-      - "Implement workflows/plugins with just a few lines of code."
-      - "Client libraries supporting multiple languages."
-      - "Integrate managed prompt packages from Sugar Hub"
-
+      - "Publish, share and monetise your prompt packages"
+      - "Discover and use managed prompts in Sugar Bakery"
+      - "Leverage Open datasets and Finetuned Micro LLMs"
     button2:
-      enable: false
-      label: "Join Waitlist"
-      link: "#"
-    waitlist2:
       enable: true
-  
+      label: "View Demo"
+      link: "https://github.com/zeon-studio/Sugarcane AI"
+    waitlist2:
+      enable: false
   
   - title: "Sugar Farm  🚜"
     image: false
@@ -59,20 +58,20 @@ features:
     waitlist:
       enable: true
 
-    title2: "Sugar Hub 🛒"
-    # image: "/images/sugar/prompt_packages-3.png"
-    content2: "Managed Marketplace for high quality GenAI assets" 
+    title2: "Sugar Bakery 🍞"
+    content2: "SDK for **Application Develpers** to develop cross-LLM business logic applications"
     bulletpoints2:
-      - "Publish, share and monetise your prompt packages"
-      - "Discover and use managed prompts in Sugar Bakery"
-      - "Leverage Open datasets and Finetuned Micro LLMs"
+      - "Implement workflows/plugins with just a few lines of code."
+      - "Client libraries supporting multiple languages."
+      - "Integrate managed prompt packages from Sugar Hub"
+
     button2:
       enable: false
       label: "Join Waitlist"
-      link: "https://github.com/zeon-studio/Sugarcane AI"
+      link: "#"
     waitlist2:
       enable: true
-  
+
   - title: "What are Prompt Packages?"
     image: "/images/sugar/prompt-package-3.png"
     content: "A prompt package is a collection of prompt templates, dataset, and LLM configuration that can be distributed as a unit of reusable prompt or functionality in the LLM ecosystem. A prompt template is tied to a specific LLM config for high accuracy"
