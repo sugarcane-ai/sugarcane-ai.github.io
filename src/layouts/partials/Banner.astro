@@ -2,6 +2,7 @@
 import { markdownify } from "@/lib/utils/textConverter";
 import { Image } from "astro:assets";
 import JoinWaitlist from "@/layouts/SingupForm";
+import DynamicIcon from "@/helpers/DynamicIcon";
 const { banner } = Astro.props;
 ---
 <!-- Banner -->
@@ -11,25 +12,40 @@ const { banner } = Astro.props;
         <div class="mb-16 text-center lg:col-9">
           <h1 set:html={markdownify(banner.title)} class="mb-4" />
           <h4 set:html={markdownify(banner.content)} class="p-4 mb-8" />
-          {
-            banner.button.enable && (
-              <a class="btn btn-primary " href={banner.button.link}>
-                {banner.button.label}
+
+            {
+              banner.button.enable && (
+                <a class="btn btn-primary" href={banner.button.link}>
+                  {banner.button.label}
+                </a>
+              )
+            }
+            {
+              banner.button2.enable && (
+                <a class="btn btn-primary ml-2" href={banner.button2.link}>
+                  {banner.button2.label}
+                </a>
+              )
+            }
+            {              
+              <a
+                aria-label={'star'}
+                href={'https://github.com/sugarcane-ai/sugarcane-ai'}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="btn btn-primary ml-2 items-center inline-flex"
+              >
+              <!-- <DynamicIcon className="mr-2" width="8px" height="8px" icon={'AiOutlineStar'} /> -->
+                <span class="">{"Github"}</span>
               </a>
-            )
-          }
-          {
-            banner.button2.enable && (
-              <a class="btn btn-primary ml-2" href={banner.button2.link}>
-                {banner.button2.label}
-              </a>
-            )
-          }
-          {
-            banner.waitlist && banner.waitlist.enable && (
-              <JoinWaitlist client:load></JoinWaitlist>)
-          }
-          
+            }
+            {
+              banner.waitlist && banner.waitlist.enable && (
+                <JoinWaitlist client:load></JoinWaitlist>)
+            }
+            
+            
+
         </div>
         {
           banner.image && (
