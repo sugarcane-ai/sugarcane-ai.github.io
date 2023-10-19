@@ -29,8 +29,8 @@ features:
 
     button:
       enable: true
-      label: "View Demo"
-      link: "/demo"
+      label: "Get Started"
+      link: "https://play.sugarcaneai.dev/api/auth/signin?callbackUrl=https%3A%2F%2Fplay.sugarcaneai.dev%2F"
     waitlist:
       enable: false
 
@@ -43,7 +43,7 @@ features:
     button2:
       enable: true
       label: "View Demo"
-      link: "https://github.com/zeon-studio/Sugarcane AI"
+      link: "/demo"
     waitlist2:
       enable: false
 
