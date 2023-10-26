@@ -4,7 +4,7 @@ banner:
   title: "Open Source Microservices Framework for LLM Apps"
   content: "Develop reliable cross-LLM workflows and plugins powered by prompt packages and Micro LLMs"
   # image: "/images/banner.png"
-  image: "/images/sugar/bannerfinal.png"
+  image: "/images/sugar/banner-micro.png"
   button:
     enable: false
     label: "Join Waitlist"

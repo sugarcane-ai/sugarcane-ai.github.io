@@ -1,5 +1,14 @@
 {
   "main": [
-
+    {
+      "name": "discord",
+      "icon": "FaDiscord",
+      "link": "https://discord.gg/7Fe4GXQjRQ"
+    },
+    {
+      "name": "github",
+      "icon": "FaGithub",
+      "link": "https://github/sugarcane-ai/sugarcane-ai"
+    }
   ]
 }
