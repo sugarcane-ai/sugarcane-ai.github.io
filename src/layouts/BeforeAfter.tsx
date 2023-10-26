@@ -9,7 +9,7 @@ const BeforeAfter2 = ({
 }) => {
   const [image, setImage] = useState("before"); // Default image state
   const handleButtonClick = (e: any, type: string) => {
-    console.log(`changing image to ${type}`);
+    // console.log(`changing image to ${type}`);
     if (e) {
       e.preventDefault();
     }

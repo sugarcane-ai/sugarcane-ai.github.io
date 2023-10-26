@@ -11,6 +11,10 @@
     {
       "name": "Demo",
       "url": "/demo"
+    },
+    {
+      "name": "Invest",
+      "url": "/invest"
     }
   ],
   "footer": [
