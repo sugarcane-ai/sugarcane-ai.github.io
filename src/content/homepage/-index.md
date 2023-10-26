@@ -11,8 +11,8 @@ banner:
     link: "https://play.sugarcaneai.dev/api/auth/signin?callbackUrl=https%3A%2F%2Fplay.sugarcaneai.dev%2F"
   button2:
     enable: true
-    label: "Invest"
-    link: "/invest"
+    label: "Docs"
+    link: "/docs"
   waitlist:
     enable: false
 
