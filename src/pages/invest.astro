@@ -1,10 +1,7 @@
 ---
 import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
-import { Image } from "astro:assets";
 import { getEntryBySlug } from "astro:content";
-import { YouTube } from '@astro-community/astro-embed-youtube';
-import Youtube from "@/shortcodes/Youtube";
 
 
 const invest = await getEntryBySlug("invest", "-index");
@@ -24,23 +21,16 @@ const { title, description, meta_title, image, video } = invest.data;
       <div class="row justify-center">
         <div class="text-center md:col-10 lg:col-12">
             <h2 set:html={markdownify(title)} class="h3 mb-6" />
-            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFyXDmgBUc&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFyXDmgBUc&#x2F;view?utm_content=DAFyXDmgBUc&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
-          <div class="content"> "Contact us to know more about our efforts"
-            <Content />
-          <div class="content"> <content />
-            <a class="btn btn-primary ml-2" href="https://api.whatsapp.com/send/?phone=919638010557&text=Hi+Ravinder%2C%0A%0AI+am+interested+to+know+more+about+Sugarcane+AI.+Let%27s+connect.">
-                  {"Whatsapp Us"}
-            </a>
-            <a class="btn btn-primary ml-2" href="mailto:invest@sugarcaneai.dev?subject=Know%20more%20about%20Sugarcane%20AI%20-%20Investment&body=Hi%20Ravinder%2C%0A%0AI%20am%20Interested%20to%20know%20more%20about%20Sugarcane%20AI.%20Let's%20connect%20sometime.">
-                  {"Email Us"}
-            </a>
+            
+            <div class="content text-xl indent-2 font-semibold"> 
+              <Content/>
+
+              <a class="btn btn-primary ml-2" href="https://api.whatsapp.com/send/?phone=919638010557&text=Hi+Ravinder%2C%0A%0AI+am+interested+to+know+more+about+Sugarcane+AI.+Let%27s+connect.">
+                Whatsapp Us
+              </a>
+              <a class="btn btn-primary ml-2" href="mailto:invest@sugarcaneai.dev?subject=Know%20more%20about%20Sugarcane%20AI%20-%20Investment&body=Hi%20Ravinder%2C%0A%0AI%20am%20Interested%20to%20know%20more%20about%20Sugarcane%20AI.%20Let's%20connect%20sometime.">
+                Email Us
+              </a>
           </div>
         </div>
       </div>
