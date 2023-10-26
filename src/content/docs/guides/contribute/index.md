@@ -1,6 +1,6 @@
 ---
 title: How to Contribute 🤝
-description: Learn how to start building your next documentation site with Starlight by Astro.
+description: Learn how to make Prompt Packages with Sugarcane AI Framework
 ---
 
 #### Join our growing community of developers and contributors. Contribute to Sugarcane AI, report issues, or submit feature requests on our [GitHub Repository](github_link).

@@ -1,6 +1,6 @@
 ---
 title: MarketPlace 🛒
-description: Learn how to start sharing your next prompts using Sugarcane AI
+description: Learn how to share your prompt packages using Sugarcane AI
 ---
 
 Sugarcane AI's Marketplace is your go-to hub for turbocharging your AI app development journey. If you're a developer looking to supercharge your projects, you're in the right place.

@@ -1,6 +1,6 @@
 ---
 title: Contributors 👨‍💻
-description: Learn how to start building your next documentation site with Starlight by Astro.
+description: Learn how to make Prompt Packages with Sugarcane AI Framework
 ---
 
 #### Thanks to the following contributors for their efforts and support in adding value to the project.
