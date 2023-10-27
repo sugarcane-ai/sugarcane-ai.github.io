@@ -14,7 +14,8 @@
     },
     {
       "name": "Invest",
-      "url": "/invest"
+      "url": "/invest",
+      "highlight": true
     }
   ],
   "footer": [

@@ -15,6 +15,7 @@ export interface ChildNavigationLink {
 export interface NavigationLink {
   name: string;
   url: string;
+  highlight?: boolean;
   hasChildren?: boolean;
   children?: ChildNavigationLink[];
 }
@@ -90,15 +91,19 @@ const { pathname } = Astro.url;
                 </ul>
               </li>
             ) : (
-              <li class="nav-item">
+              <li class="nav-item relative">
                 <a
                   href={menu.url}
-                  class={`nav-link block ${
+                  class={`nav-link pt-1 block ${
                     (pathname === `${menu.url}/` || pathname === menu.url) &&
                     "active"
                   }`}
                 >
                   {menu.name}
+                  {menu.highlight &&
+                    (<div class="absolute top-0 right-0  w-2 h-2 rounded-full bg-gray-100 animate-ping"></div>
+                    <div class="absolute top-0 right-0 w-2 h-2 rounded-full bg-gray-100"></div>)
+                  }
                 </a>
               </li>
             )}
