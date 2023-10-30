@@ -40,7 +40,7 @@
   },
   "metadata": {
     "meta_author": "Sugarcane AI",
-    "meta_image": "/images/og-image.png",
+    "meta_image": "/sugar/banner-new.png",
     "meta_description": "Sugarcane AI provides an open-source npm-like package ecosystem for prompts. It offers a comprehensive framework for engineering teams, establishing clear separation of concerns for various roles, including data scientists, prompt developers, and app developers. The platform facilitates the development, training, and commercialization of cross-LLMs apps."
   },
   "links": {
