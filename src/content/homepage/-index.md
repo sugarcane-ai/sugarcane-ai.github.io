@@ -4,6 +4,12 @@ banner:
   title: "npm like package ecosystem for Prompts"
   content: "Open Source Framework to build, train and monetise cross LLM and high accuracy Prompt Packages powered by Micro LLMs"
   # image: "/images/banner.png"
+
+      # Create Prompt Packages: "/images/sugar/banner-factory.png"
+      # APIs for Prompt Package: "/images/sugar/banner-api.png"
+      # Discover & Use Packages: "/images/sugar/banner-new.png"
+      # Build Instant Prompt Apps: "/images/sugar/Sugar_cube.png"
+
   image: "/images/sugar/banner-new.png"
   button:
     enable: true
@@ -108,6 +114,7 @@ features:
     image:
       after: "/images/sugar/micro-image.png"
       before: "/images/sugar/mono-image.png"
+
     content: "Break down your monolithic LLM app using a Microservices approach into Prompt Packages and Micro LLMs to achieve a clear separation of concerns among app developers, prompt developers, and data scientists."
     bulletpoints:
       - "Faster Knowledge upgradation"
