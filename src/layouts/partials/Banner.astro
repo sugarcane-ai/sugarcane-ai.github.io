@@ -3,8 +3,10 @@ import { markdownify } from "@/lib/utils/textConverter";
 import { Image } from "astro:assets";
 import JoinWaitlist from "@/layouts/SingupForm";
 import DynamicIcon from "@/helpers/DynamicIcon";
+import Tabs from "../tabs";
 const { banner } = Astro.props;
 ---
+
 <!-- Banner -->
 <section class="section pt-14">
     <div class="container">
@@ -47,6 +49,7 @@ const { banner } = Astro.props;
             
 
         </div>
+        <Tabs client:load tabs={banner.tabs}></Tabs>
         {
           banner.image && (
             <div class="col-12">
@@ -61,6 +64,7 @@ const { banner } = Astro.props;
             </div>
           )
         }
+        
       </div>
     </div>
 </section>
