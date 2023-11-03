@@ -14,15 +14,14 @@ const Tabs = ({ tabs }: { tabs: tab[] }) => {
 
   return (
     <div>
-      <div className="flex">
+      <div className="flex flex-wrap">
         {tabs.map((tab: tab, index: number) => (
           <button
             key={index}
             onClick={() => handleTabChange(tab)}
-            className={`flex-1 text-gray-100 transition-all duration-300 relative px-3 py-1 whitespace-nowrap rounded-full hover:text-neutral-0 transition-all duration-300 ${
+            className={`flex-1 w-auto text-gray-100 transition-all duration-300 relative px-3 py-1 m-1 whitespace-nowrap rounded-full hover:text-neutral-0 transition-all duration-300 ${
               activeTab.name === tab.name ? "bg-gray-600" : ""
             }`}
-            style={{ minWidth: "100px" }} // Adjust the width as needed
           >
             {tab.name}
           </button>
