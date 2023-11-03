@@ -3,14 +3,7 @@
 banner:
   title: "npm like package ecosystem for Prompts"
   content: "Open Source Framework to build, train and monetise cross LLM and high accuracy Prompt Packages powered by Micro LLMs"
-  # image: "/images/banner.png"
-
-      # Create Prompt Packages: "/images/sugar/banner-factory.png"
-      # APIs for Prompt Package: "/images/sugar/banner-api.png"
-      # Discover & Use Packages: "/images/sugar/banner-new.png"
-      # Build Instant Prompt Apps: "/images/sugar/Sugar_cube.png"
-
-  image: "/images/sugar/banner-new.png"
+  # image: "/images/sugar/banner-new.png"
   button:
     enable: true
     label: "Get Started"
@@ -21,6 +14,20 @@ banner:
     link: "/docs"
   waitlist:
     enable: false
+
+  # Tabs
+  tabs:
+    - name: "Create Prompt Packages"
+      url: "/images/sugar/banner-factory.png"
+
+    - name: "APIs for Prompt Package"
+      url: "/images/sugar/banner-api.png"
+
+    - name: "Discover & Use Packages"
+      url: "/images/sugar/banner-new.png"
+
+    - name: "Build Instant Prompt Apps"
+      url: "/images/sugar/Sugar_cube.png"
 
 # Features
 features:
