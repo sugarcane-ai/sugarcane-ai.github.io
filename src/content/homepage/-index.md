@@ -118,9 +118,12 @@ features:
       enable: true
 
   - title: "Migrate from Monolith to Micro Services Architecture"
-    image:
-      after: "/images/sugar/micro-image.png"
-      before: "/images/sugar/mono-image.png"
+    # image: ""
+    tabs:
+      - name: "Before"
+        url: "/images/sugar/mono-image.png"
+      - name: "After"
+        url: "/images/sugar/micro-image.png"
 
     content: "Break down your monolithic LLM app using a Microservices approach into Prompt Packages and Micro LLMs to achieve a clear separation of concerns among app developers, prompt developers, and data scientists."
     bulletpoints:
