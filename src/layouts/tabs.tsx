@@ -19,7 +19,7 @@ const Tabs = ({ tabs }: { tabs: tab[] }) => {
           <button
             key={index}
             onClick={() => handleTabChange(tab)}
-            className={`flex-1 w-auto text-gray-100 transition-all duration-300 relative px-3 py-1 m-1 whitespace-nowrap rounded-full hover:text-neutral-0 transition-all duration-300 ${
+            className={`flex-1 w-auto text-gray-100 transition-all duration-300 relative px-3 py-1 m-1 whitespace-nowrap rounded-sm hover:text-neutral-0 transition-all duration-300 ${
               activeTab.name === tab.name ? "bg-gray-600" : ""
             }`}
           >
