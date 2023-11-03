@@ -17,13 +17,13 @@ banner:
 
   # Tabs
   tabs:
-    - name: "Create Prompt Packages"
+    - name: "Create & Deploy Prompt Packages"
       url: "/images/sugar/banner-factory.png"
 
-    - name: "APIs for Prompt Package"
+    - name: "Access Prompt Package over APIs"
       url: "/images/sugar/banner-api.png"
 
-    - name: "Discover & Use Packages"
+    - name: "Discover & Use Prompt Packages"
       url: "/images/sugar/banner-new.png"
 
     - name: "Build Instant Prompt Apps"
