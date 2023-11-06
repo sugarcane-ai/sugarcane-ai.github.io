@@ -1,7 +1,5 @@
 ---
-title: "Privacy Policy - Sugarcane AI"
-meta_title: ""
-description: "Learn about Privacy Policy of Sugarcane AI"
+title: "Privacy Policy Open Source AI Prompt Engineering course using AI Playground & AI App"	description: "Privacy Policy of Prompt Engineering course by Sugarcane AI's open source AI Playground using npm like Prompt Pacakage and Micro LLM"
 draft: false
 ---
 

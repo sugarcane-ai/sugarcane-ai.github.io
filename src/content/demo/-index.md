@@ -1,7 +1,5 @@
 ---
-title: "Sugarcane AI Framework Demo"
-meta_title: "Sugarcane AI Microservices Framework"
-description: "Sugarcane AI Microservices Framework"
+title: "Demo of Open Source AI Prompt Engineering Course using AI Playground & AI App"	description: "Demo of Prompt Engineering course by Sugarcane AI's open source AI Playground using npm like Prompt Pacakage and Micro LLM"
 image: "/images/avatar.png"
 draft: false
 video: ns0UWOv-xGo

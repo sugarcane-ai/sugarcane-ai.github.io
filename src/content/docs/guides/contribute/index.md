@@ -1,6 +1,7 @@
 ---
-title: How to Contribute 🤝
-description: Learn how to make Prompt Packages with Sugarcane AI Framework
+title: "Contribute to Open Source AI Prompt Engineering course using AI Playground & AI App"
+
+description: "Contribute to Prompt Engineering course by Sugarcane AI's open source AI Playground using npm like Prompt Pacakage and Micro LLM"
 ---
 
 #### Join our growing community of developers and contributors. Contribute to Sugarcane AI, report issues, or submit feature requests on our [GitHub Repository](github_link).

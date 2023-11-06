@@ -1,6 +1,5 @@
 ---
-title: MarketPlace 🛒
-description: Learn how to share your prompt packages using Sugarcane AI
+title: "Prompt Marketplace for Open Source AI Prompt Engineering course using AI Playground & AI App"	description: "Marketplace of Prompt Engineering course by Sugarcane AI's open source AI Playground using npm like Prompt Pacakage and Micro LLM"
 ---
 
 Sugarcane AI's Marketplace is your go-to hub for turbocharging your AI app development journey. If you're a developer looking to supercharge your projects, you're in the right place.
