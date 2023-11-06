@@ -1,9 +1,7 @@
 ---
-title: "Our Elevator Pitch"
-meta_title: "Invest in Sugarcane AI"
-description: "Sugarcane AI Investment"
+title: "Invest in Open Source AI Prompt Engineering course using AI Playground & AI App"
+description: "Invest in Prompt Engineering course by Sugarcane AI's open source AI Playground using npm like Prompt Pacakage and Micro LLM"
 image: "/images/avatar.png"
-draft: false
 video: ns0UWOv-xGo
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: Contributors 👨‍💻
-description: Learn how to make Prompt Packages with Sugarcane AI Framework
+title: "Contributors of Open Source AI Prompt Engineering course using AI Playground & AI App"
+
+description: "Contributors of Prompt Engineering course by Sugarcane AI's open source AI Playground using npm like Prompt Pacakage and Micro LLM"
 ---
 
 #### Thanks to the following contributors for their efforts and support in adding value to the project.

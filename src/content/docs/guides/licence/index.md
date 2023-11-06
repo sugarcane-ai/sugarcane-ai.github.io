@@ -1,6 +1,5 @@
 ---
-title: Licence 📄
-description: Licence to use Sugarcane AI
+title: "Licence for Open Source AI Prompt Engineering course using AI Playground & AI App"	description: "Licence of Prompt Engineering course by Sugarcane AI's open source AI Playground using npm like Prompt Pacakage and Micro LLM"
 ---
 
 ### Sugarcane AI is an Open Source Framework : Use, Reproduction and distribution of same is allowed as per Apache License 2.0 🚀

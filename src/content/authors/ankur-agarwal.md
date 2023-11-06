@@ -1,8 +1,7 @@
 ---
-title: Ankur Agarwal
-# email: entrepreneur.ankur@gmail.com
+title: "Ankur Agarwal " Open Source Prompt Engineering course using AI Playground & AI App"	description: "Ankur Agarwal - Prompt Engineering course by Sugarcane AI's open source AI Playground using npm like Prompt Pacakage and Micro LLM"
+
 image: "/images/authors/ankur.png"
-description: "Founder @ Sugarcane AI."
 social:
   - name: github
     icon: FaGithub
