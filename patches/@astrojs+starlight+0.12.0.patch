@@ -1,10 +1,10 @@
 diff --git a/node_modules/@astrojs/starlight/index.ts b/node_modules/@astrojs/starlight/index.ts
-index 50e37d0..96f640c 100644
+index 53ffb2e..48cfd8c 100644
 --- a/node_modules/@astrojs/starlight/index.ts
 +++ b/node_modules/@astrojs/starlight/index.ts
-@@ -27,11 +27,11 @@ export default function StarlightIntegration(opts: StarlightUserConfig): AstroIn
- 		hooks: {
+@@ -29,11 +29,11 @@ export default function StarlightIntegration(opts: StarlightUserConfig): AstroIn
  			'astro:config:setup': ({ config, injectRoute, updateConfig }) => {
+ 				const useTranslations = createTranslationSystemFromFs(userConfig, config);
  				injectRoute({
 -					pattern: '404',
 +					pattern: 'docs/404',
@@ -15,7 +15,7 @@ index 50e37d0..96f640c 100644
 +					pattern: 'docs/[...slug]',
  					entryPoint: '@astrojs/starlight/index.astro',
  				});
- 				const newConfig: AstroUserConfig = {
+ 				const integrations: AstroIntegration[] = [];
 diff --git a/node_modules/@astrojs/starlight/utils/head.ts b/node_modules/@astrojs/starlight/utils/head.ts
 index 25a2091..d1cf48f 100644
 --- a/node_modules/@astrojs/starlight/utils/head.ts
