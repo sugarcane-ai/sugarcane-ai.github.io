@@ -24,10 +24,10 @@ export interface Props {
 }
 
 // distructure frontmatters
-const { title, meta_title, description, image, noindex, canonical } =
+let { title, meta_title, description, image, noindex, canonical } =
   Astro.props;
 
-
+canonical = config.site.canonical;
 ---
 
 <!DOCTYPE html>
