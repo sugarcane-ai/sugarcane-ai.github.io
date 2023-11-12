@@ -4,7 +4,7 @@
     "base_url": "https://sugarcaneai.dev",
     "canonical": "https://www.sugarcaneai.dev",
     "base_path": "/",
-    "trailing_slash": false,
+    "trailing_slash": true,
     "favicon": "/images/sugar/favicon.png",
     "logo": "/images/sugar/logo-trans.png",
     "logo_darkmode": "/images/sugar/logo-transparent.png",

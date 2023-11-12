@@ -10,7 +10,7 @@ import remarkToc from "remark-toc";
 import config from "./src/config/config.json";
 import starlight from "@astrojs/starlight";
 
-const site = "https://astro.build/";
+const site = "https://sugarcaneai.dev/";
 
 // https://astro.build/config
 export default defineConfig({
