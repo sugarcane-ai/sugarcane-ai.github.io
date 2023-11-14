@@ -2,7 +2,7 @@
   "site": {
     "title": "Open Source npm like Prompt Pacakge ecosystem powered by AI Playground & Micro LLMs",
     "base_url": "https://sugarcaneai.dev",
-    "canonical": "https://www.sugarcaneai.dev",
+    "canonical": "https://sugarcaneai.dev",
     "base_path": "/",
     "trailing_slash": true,
     "favicon": "/images/sugar/favicon.png",
