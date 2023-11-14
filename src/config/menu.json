@@ -2,26 +2,26 @@
   "main": [
     {
       "name": "Docs",
-      "url": "/docs"
+      "url": "/docs/"
     },
     {
       "name": "Blog",
-      "url": "/blog"
+      "url": "/blog/"
     },
     {
       "name": "Demo",
-      "url": "/demo"
+      "url": "/demo/"
     },
     {
       "name": "Invest",
-      "url": "/invest",
+      "url": "/invest/",
       "highlight": true
     }
   ],
   "footer": [
     {
       "name": "Privacy",
-      "url": "/privacy-policy"
+      "url": "/privacy-policy/"
     }
   ]
 }

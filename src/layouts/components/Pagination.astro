@@ -28,7 +28,7 @@ for (let i = 1; i <= totalPages; i++) {
           href={
             indexPageLink
               ? `${section ? "/" + section : "/"}`
-              : `${section ? "/" + section : ""}/page/${currentPage - 1}`
+              : `${section ? "/" + section : ""}/page/${currentPage - 1}/`
           }
           class="rounded px-2 py-1.5 text-dark hover:bg-theme-light dark:text-darkmode-dark dark:hover:bg-darkmode-theme-light"
         >
@@ -80,7 +80,7 @@ for (let i = 1; i <= totalPages; i++) {
             href={
               i === 0
                 ? `${section ? "/" + section : "/"}`
-                : `${section ? "/" + section : ""}/page/${pagination}`
+                : `${section ? "/" + section : ""}/page/${pagination}/`
             }
             aria-current="page"
             class="rounded px-4 py-2 text-dark hover:bg-theme-light dark:text-darkmode-dark dark:hover:bg-darkmode-theme-light"
@@ -93,7 +93,7 @@ for (let i = 1; i <= totalPages; i++) {
       {/* next page */}
       {hasNextPage ? (
         <a
-          href={`${section ? "/" + section : ""}/page/${currentPage + 1}`}
+          href={`${section ? "/" + section : ""}/page/${currentPage + 1}/`}
           class="rounded px-2 py-1.5 text-dark hover:bg-theme-light dark:text-darkmode-dark dark:hover:bg-darkmode-theme-light"
         >
           <span class="sr-only">Next</span>
