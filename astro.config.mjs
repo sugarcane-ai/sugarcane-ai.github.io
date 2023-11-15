@@ -20,20 +20,20 @@ export default defineConfig({
   integrations: [
     react(),
 
-    // sitemap({
-    //   filter: (page) => !page.startsWith("https://sugarcaneai.dev/x"),
-    //   serialize(item) {
-    //     if (/exclude-from-sitemap/.test(item.url)) {
-    //       return undefined;
-    //     }
-    //     if (true || /your-special-page/.test(item.url)) {
-    //       item.changefreq = "daily";
-    //       item.lastmod = new Date();
-    //       item.priority = 0.7;
-    //     }
-    //     return item;
-    //   },
-    // }),
+    sitemap({
+      filter: (page) => !page.startsWith("https://sugarcaneai.dev/x"),
+      serialize(item) {
+        if (/exclude-from-sitemap/.test(item.url)) {
+          return undefined;
+        }
+        if (true || /your-special-page/.test(item.url)) {
+          item.changefreq = "daily";
+          item.lastmod = new Date();
+          item.priority = 0.7;
+        }
+        return item;
+      },
+    }),
 
     tailwind({
       config: {
