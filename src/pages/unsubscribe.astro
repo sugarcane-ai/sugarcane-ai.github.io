@@ -5,7 +5,7 @@ import { Image } from "astro:assets";
 import { getEntryBySlug } from "astro:content";
 import { YouTube } from '@astro-community/astro-embed-youtube';
 import Youtube from "@/shortcodes/Youtube";
-import JoinWaitlist from '@/layouts/UnsubscribeForm';
+import UnsubscribeMaillist from '@/layouts/UnsubscribeForm';
 
 const demo = await getEntryBySlug("demo", "-index");
 const { Content } = await demo.render();
@@ -32,7 +32,7 @@ const { title, description, meta_title, image, video } = demo.data;
         <br></br>
         <br></br>
         <br></br>
-          <JoinWaitlist client:load></JoinWaitlist>        
+          <UnsubscribeMaillist client:load></UnsubscribeMaillist>        
           <div class="content">
             <Content />
           </div>

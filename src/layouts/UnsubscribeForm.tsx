@@ -1,6 +1,5 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Modal.css";
-
 
 const host = import.meta.env.PUBLIC_SIGNUP_FORM_HOST;
 
@@ -15,7 +14,7 @@ const customStyles = {
   },
 };
 
-const SignupForm = ({ isOpen, onRequestClose, emailParameter,emailkey }) => {
+const SignupForm = ({ isOpen, onRequestClose, emailParameter, emailkey }) => {
   const [email, setEmail] = useState("");
   const [success, setSuccess] = useState(false);
   const handleSubmit = async (e) => {
@@ -26,10 +25,13 @@ const SignupForm = ({ isOpen, onRequestClose, emailParameter,emailkey }) => {
     };
 
     try {
-      const response = await fetch(`https://7cy6ykztc4.execute-api.ap-south-1.amazonaws.com/unsubscribe?email=${emailParameter}&emailkey=${emailkey}`, {
-        method: "GET",
-      });
-console.log(response)
+      const response = await fetch(
+        `https://7cy6ykztc4.execute-api.ap-south-1.amazonaws.com/unsubscribe?email=${emailParameter}&emailkey=${emailkey}`,
+        {
+          method: "GET",
+        },
+      );
+      console.log(response);
       if (response.ok) {
         setSuccess(true);
       } else {
@@ -50,10 +52,8 @@ console.log(response)
                 {/* <button className="modal-close" onClick={onRequestClose}>
                   X
                 </button> */}
-                <br>
-                  </br>
-                  <br>
-                  </br>
+                <br></br>
+                <br></br>
                 <div className="mx-auto text-center">
                   <img
                     width="80px"
@@ -62,8 +62,7 @@ console.log(response)
                     src="/images/sugar/sugarcane-news.png"
                     alt="no-search-found"
                   />
-                  <br>
-                  </br>
+                  <br></br>
                   <h2
                     className="mt-10"
                     style={{
@@ -83,10 +82,8 @@ console.log(response)
                 {/* <button className="modal-close" onClick={onRequestClose}>
                   X
                 </button> */}
-                <br>
-                  </br>
-                  <br>
-                  </br>
+                <br></br>
+                <br></br>
                 <div className="mx-auto text-center">
                   <img
                     width="80px"
@@ -106,8 +103,7 @@ console.log(response)
                   >
                     Get early access !
                   </h2> */}
-                  <br>
-                  </br>
+                  <br></br>
                   <h2
                     className="mb-6"
                     style={{
@@ -122,6 +118,23 @@ console.log(response)
 
                   <form onSubmit={handleSubmit}>
                     <div>
+                      <input
+                        type="email"
+                        disabled
+                        style={{
+                          "font-family": "inherit",
+                          "font-size": "1rem",
+                          "font-weight": "400",
+                          "line-height": "inherit",
+                          width: "100%",
+                          height: "auto",
+                          padding: "0.75rem 1.25rem",
+                          "border-radius": "2rem",
+                        }}
+                        id="email"
+                        placeholder="Email"
+                        value={emailParameter}
+                      />
                       <button className="submitButton mt-4" type="submit">
                         Unsubscribe Now
                       </button>
@@ -142,27 +155,30 @@ function JoinWaitlist({
   styles = { marginLeft: "1rem" },
 }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [emailParameter, setEmailParameter] = useState('');
-  const [emailkey, setEmailKeyParameter] = useState('');
+  const [emailParameter, setEmailParameter] = useState("");
+  const [emailkey, setEmailKeyParameter] = useState("");
 
   useEffect(() => {
     // Access query parameters on the client side
     const urlSearchParams = new URLSearchParams(window.location.search);
-    const emailParam = urlSearchParams.get('email');
-    const emailkey=urlSearchParams.get('emailkey');
+    const emailParam = urlSearchParams.get("email");
+    const emailkey = urlSearchParams.get("emailkey");
 
     if (emailParam) {
       setEmailParameter(emailParam);
       // Perform any logic based on the query parameter
-      console.log('Your parameter:', emailParam);
+      console.log("Your parameter:", emailParam);
     }
-    if(emailkey)setEmailKeyParameter(emailkey);
+    if (emailkey) setEmailKeyParameter(emailkey);
   }, []); // Run this effect only once on mount
-
 
   return (
     <span>
-      <SignupForm isOpen={!isOpen} emailParameter={emailParameter} emailkey={emailkey} />
+      <SignupForm
+        isOpen={!isOpen}
+        emailParameter={emailParameter}
+        emailkey={emailkey}
+      />
     </span>
   );
 }
