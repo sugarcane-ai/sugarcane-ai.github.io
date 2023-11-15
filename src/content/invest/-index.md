@@ -1,9 +1,11 @@
 ---
-title: "Invest in Open Source AI Prompt Engineering course using AI Playground & AI App"
+title: "Sugarcane AI : npm like package ecosystem for Prompts "
 description: "Invest in Prompt Engineering course by Sugarcane AI's open source AI Playground using npm like Prompt Pacakage and Micro LLM"
 image: "/images/avatar.png"
 video: ns0UWOv-xGo
 ---
+
+## Our Elevator Pitch
 
 Sugarcane AI is creating an open marketplace for developers to package and sell high-accuracy, npm-like programmable Prompt Packages.
 
