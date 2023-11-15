@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "../styles/Modal.css";
+
 
 const host = import.meta.env.PUBLIC_SIGNUP_FORM_HOST;
 
@@ -14,10 +15,9 @@ const customStyles = {
   },
 };
 
-const SignupForm = ({ isOpen, onRequestClose }) => {
+const SignupForm = ({ isOpen, onRequestClose, emailParameter,emailkey }) => {
   const [email, setEmail] = useState("");
   const [success, setSuccess] = useState(false);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -26,15 +26,11 @@ const SignupForm = ({ isOpen, onRequestClose }) => {
     };
 
     try {
-      const response = await fetch(`${host}/api/email-signup`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
+      const response = await fetch(`https://7cy6ykztc4.execute-api.ap-south-1.amazonaws.com/unsubscribe?email=${emailParameter}&emailkey=${emailkey}`, {
+        method: "GET",
       });
-
-      if (response.status === 200) {
+console.log(response)
+      if (response.ok) {
         setSuccess(true);
       } else {
         console.error("Submission failed.");
@@ -51,9 +47,13 @@ const SignupForm = ({ isOpen, onRequestClose }) => {
           <>
             {success && (
               <>
-                <button className="modal-close" onClick={onRequestClose}>
+                {/* <button className="modal-close" onClick={onRequestClose}>
                   X
-                </button>
+                </button> */}
+                <br>
+                  </br>
+                  <br>
+                  </br>
                 <div className="mx-auto text-center">
                   <img
                     width="80px"
@@ -62,6 +62,8 @@ const SignupForm = ({ isOpen, onRequestClose }) => {
                     src="/images/sugar/sugarcane-news.png"
                     alt="no-search-found"
                   />
+                  <br>
+                  </br>
                   <h2
                     className="mt-10"
                     style={{
@@ -78,9 +80,13 @@ const SignupForm = ({ isOpen, onRequestClose }) => {
             )}
             {!success && (
               <>
-                <button className="modal-close" onClick={onRequestClose}>
+                {/* <button className="modal-close" onClick={onRequestClose}>
                   X
-                </button>
+                </button> */}
+                <br>
+                  </br>
+                  <br>
+                  </br>
                 <div className="mx-auto text-center">
                   <img
                     width="80px"
@@ -100,6 +106,8 @@ const SignupForm = ({ isOpen, onRequestClose }) => {
                   >
                     Get early access !
                   </h2> */}
+                  <br>
+                  </br>
                   <h2
                     className="mb-6"
                     style={{
@@ -113,29 +121,6 @@ const SignupForm = ({ isOpen, onRequestClose }) => {
                   </h2>
 
                   <form onSubmit={handleSubmit}>
-                    <input
-                      type="email"
-                      style={{
-                        "font-family": "inherit",
-                        "font-size": "1rem",
-                        "font-weight": "400",
-                        "line-height": "inherit",
-                        width: "100%",
-                        height: "auto",
-                        padding: "0.75rem 1.25rem",
-                        "border-radius": "2rem",
-                        color: "black",
-                        background: "white",
-                        "text-transform": "unset",
-                        "text-rendering": "optimizeLegibility",
-                      }}
-                      id="email"
-                      placeholder="Email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      required
-                    />
-
                     <div>
                       <button className="submitButton mt-4" type="submit">
                         Unsubscribe Now
@@ -157,23 +142,27 @@ function JoinWaitlist({
   styles = { marginLeft: "1rem" },
 }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [emailParameter, setEmailParameter] = useState('');
+  const [emailkey, setEmailKeyParameter] = useState('');
 
-  const handleOpenModal = async (e) => {
-    e.preventDefault();
-    setIsOpen(true);
-  };
+  useEffect(() => {
+    // Access query parameters on the client side
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const emailParam = urlSearchParams.get('email');
+    const emailkey=urlSearchParams.get('emailkey');
 
-  const handleCloseModal = (updatedConfig) => {
-    setIsOpen(false);
-  };
+    if (emailParam) {
+      setEmailParameter(emailParam);
+      // Perform any logic based on the query parameter
+      console.log('Your parameter:', emailParam);
+    }
+    if(emailkey)setEmailKeyParameter(emailkey);
+  }, []); // Run this effect only once on mount
+
 
   return (
     <span>
-      <a className={klass} href={"#"} onClick={handleOpenModal} style={styles}>
-        Unsubscribe Now
-      </a>
-
-      <SignupForm isOpen={isOpen} onRequestClose={handleCloseModal} />
+      <SignupForm isOpen={!isOpen} emailParameter={emailParameter} emailkey={emailkey} />
     </span>
   );
 }

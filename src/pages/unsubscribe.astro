@@ -10,7 +10,6 @@ import JoinWaitlist from '@/layouts/UnsubscribeForm';
 const demo = await getEntryBySlug("demo", "-index");
 const { Content } = await demo.render();
 const { title, description, meta_title, image, video } = demo.data;
-
 ---
 
 <Base
@@ -23,7 +22,17 @@ const { title, description, meta_title, image, video } = demo.data;
     <div class="container">
       <div class="row justify-center">
         <div class="text-center md:col-10 lg:col-12">
-          <JoinWaitlist client:load></JoinWaitlist>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+          <JoinWaitlist client:load></JoinWaitlist>        
           <div class="content">
             <Content />
           </div>
