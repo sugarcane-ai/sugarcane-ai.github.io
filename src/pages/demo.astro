@@ -6,13 +6,11 @@ import { getEntryBySlug } from "astro:content";
 import { YouTube } from '@astro-community/astro-embed-youtube';
 import Youtube from "@/shortcodes/Youtube";
 
-
 const demo = await getEntryBySlug("demo", "-index");
 const { Content } = await demo.render();
-const { title, description, meta_title, image, video } = demo.data;
+const { title, title1, title2, description, meta_title, image, video1, video2 } = demo.data;
 
 ---
-
 <Base
   title={title}
   meta_title={meta_title}
@@ -23,8 +21,22 @@ const { title, description, meta_title, image, video } = demo.data;
     <div class="container">
       <div class="row justify-center">
         <div class="text-center md:col-10 lg:col-12">
-            <h2 set:html={markdownify(title)} class="h3 mb-6" />
-            <Youtube client:load id={video} title="Demo" />
+            <h2 set:html={markdownify(title1)} class="h3 mb-6" />
+            <Youtube client:load id={video1} title="Demo" />
+          <div class="content">
+            <Content />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="text-center md:col-10 lg:col-12">
+            <h2 set:html={markdownify(title2)} class="h3 mb-6" />
+            <Youtube client:load id={video2} title="Demo" />
           <div class="content">
             <Content />
           </div>
