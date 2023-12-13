@@ -9,6 +9,11 @@
       "name": "github",
       "icon": "FaGithub",
       "link": "https://github.com/sugarcane-ai/sugarcane-ai"
+    },
+    {
+      "name": "linkedin",
+      "icon": "FaLinkedin",
+      "link": "https://www.linkedin.com/company/99978636"
     }
   ]
 }
