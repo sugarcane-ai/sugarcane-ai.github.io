@@ -22,6 +22,10 @@
     {
       "name": "Privacy",
       "url": "/privacy-policy/"
+    },
+    {
+      "name": "Terms",
+      "url": "/terms/"
     }
   ]
 }

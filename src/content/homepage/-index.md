@@ -34,11 +34,11 @@ features:
   - title: "Sugar Factory 🏭"
     image: false
     # image: "/images/sugar/prompt_packages-3.png"
-    content: "No-code Playground for **Prompt Developers** for faster & efficient prompt engineering"
+    content: "No-code Cloud based IDE for **Prompt Developers** for faster & efficient prompt engineering"
     bulletpoints:
-      - "Build and ship your prompts over APIs."
-      - "Label and manage prompt completion datasets."
-      - "Version and backtest prompts for better performance."
+      - "Build and ship your prompts over APIs"
+      - "Label and manage prompt completion datasets"
+      - "Version and backtest prompts for better performance"
 
     button:
       enable: true
@@ -48,48 +48,48 @@ features:
       enable: false
 
     title2: "Sugar Hub 🛒"
-    content2: "**Managed Marketplace** for high quality GenAI assets"
+    content2: "**Managed Marketplace** for sharing and monetising high quality GenAI assets with the ecosystem"
     bulletpoints2:
       - "Publish, share and monetise your prompt packages"
       - "Discover and use managed prompts in Sugar Bakery"
       - "Leverage Open datasets and Finetuned Micro LLMs"
     button2:
       enable: true
-      label: "View Demo"
-      link: "/demo"
+      label: "Get Started"
+      link: "https://play.sugarcaneai.dev/marketplace/packages"
     waitlist2:
       enable: false
 
-  - title: "Sugar Farm  🚜"
-    image: false
-    content: "Data Assistant for **Data Scientists** to build Micro LLMs"
-    bulletpoints:
-      - "Train and backtest Micro LLMs using labeled datasets."
-      - "Version and ship Fine tuned LLMs over APIs."
-      - "Publish fine-tuned Micro LLMs on Sugar Hub."
+#   - title: "Sugar Farm  🚜"
+#     image: false
+#     content: "Data Assistant for **Data Scientists** to build Micro LLMs"
+#     bulletpoints:
+#       - "Train and backtest Micro LLMs using labeled datasets"
+#       - "Version and ship Fine tuned LLMs over APIs"
+#       - "Publish fine-tuned Micro LLMs on Sugar Hub"
 
-    button:
-      enable: false
-      label: "Join Waitlist"
-      link: "#"
-    waitlist:
-      enable: true
+#     button:
+#       enable: false
+#       label: "Join Waitlist"
+#       link: "#"
+#     waitlist:
+#       enable: true
 
-    title2: "Sugar Bakery 🍞"
-    content2: "SDK for **Application Develpers** to develop cross-LLM business logic applications"
-    bulletpoints2:
-      - "Implement workflows/plugins with just a few lines of code."
-      - "Client libraries supporting multiple languages."
-      - "Integrate managed prompt packages from Sugar Hub"
+#     title2: "Sugar Bakery 🍞"
+#     content2: "SDK for **Application Develpers** to develop cross-LLM business logic applications"
+#     bulletpoints2:
+#       - "Implement workflows/plugins with just a few lines of code"
+#       - "Client libraries supporting multiple languages."
+#       - "Integrate managed prompt packages from Sugar Hub"
 
-    button2:
-      enable: false
-      label: "Join Waitlist"
-      link: "#"
-    waitlist2:
-      enable: true
+#     button2:
+#       enable: false
+#       label: "Join Waitlist"
+#       link: "#"
+#     waitlist2:
+#       enable: true
 
-  - title: "What are Prompt Packages?"
+  - title: "What are Prompt Packages ?"
     image: "/images/sugar/prompt-package-3.png"
     content: "A prompt package is a collection of prompt templates, dataset, and LLM configuration that can be distributed as a unit of reusable prompt or functionality in the LLM ecosystem. A prompt template is tied to a specific LLM config for high accuracy"
     bulletpoints:
@@ -98,12 +98,12 @@ features:
       - "Together with a Micro LLM, it can deliver exceptionally high performance."
     button:
       enable: true
-      label: "Get Started"
-      link: "https://play.sugarcaneai.dev/api/auth/signin?callbackUrl=https%3A%2F%2Fplay.sugarcaneai.dev%2F"
+      label: "View Demo"
+      link: "/demo/"
     waitlist:
       enable: false
 
-  - title: "What are Micro LLMs?"
+  - title: "What are Micro LLMs ?"
     image: "/images/sugar/micro-llm-comparison.png"
     content: "Micro LLMs are smaller fine tuned model build on top of 3b/7b parameters and trained for task specific prompts, which can be used to automate workflows/plugins to ensure their reliability and accuracy"
     bulletpoints:
@@ -111,11 +111,25 @@ features:
       - "Low Cost for Pre finetune Prompts"
       - "Ulta Low Latency for response generation"
     button:
-      enable: false
-      label: "Join Waitlist"
-      link: "#"
-    waitlist:
       enable: true
+      label: "View Demo"
+      link: "https://play.sugarcaneai.dev/api/auth/signin?callbackUrl=https%3A%2F%2Fplay.sugarcaneai.dev%2F"
+    waitlist:
+      enable: false
+  
+  - title: "What are Sugar Cubes ?"
+    image: "/images/sugar/sample-cube.png"
+    content: "Sugar Cubes aka Prompt Applications are the quickest and easiest way to create and collaborate over a LLM based application. A cube can be created by just writing a Prompt without any hassle of LLM integration or code deployments"
+    bulletpoints:
+      - "Create and share usable Prompts in just few clicks"
+      - "Collect Feedaback & training data from actual users"
+      - "Single Click Deploy and Use as an API over any Platform"
+    button:
+      enable: true
+      label: "Try Now"
+      link: "https://play.sugarcaneai.dev/sugar/christmas-greeting-image/celebrity-santa-greeting/preview"
+    waitlist:
+      enable: false
 
   - title: "Migrate from Monolith to Micro Services Architecture"
     # image: ""

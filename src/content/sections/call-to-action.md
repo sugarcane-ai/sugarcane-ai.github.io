@@ -1,8 +1,8 @@
 ---
 enable: true
-title: "Ready to Learn Prompt Engineering with Sugarcane AI Playground?"
+title: "Ready to experiment with Prompts using Sugarcane AI's Cloud Based IDE?"
 image: "/images/sugar/logos/icon-1.png"
-description: "Experience the future of AI with Sugarcane AI and Micro LLMs. Build, train and sell Prompt Packages with ease and flexibility."
+description: "Experience the future of AI with Prompt Packages and Micro LLMs. Build, train and sell Prompt Packages with ease and flexibility."
 waitlist:
   enable: false
 button:

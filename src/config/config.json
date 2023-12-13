@@ -59,6 +59,11 @@
       "name": "discord",
       "icon": "FaDiscord",
       "link": "https://discord.gg/7Fe4GXQjRQ"
+    },
+    {
+      "name": "linkedin",
+      "icon": "FaLinkedin",
+      "link": "https://www.linkedin.com/company/99978636"
     }
   ]
 }
