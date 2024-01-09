@@ -1,0 +1,310 @@
+---
+import Base from "@/layouts/Base.astro";
+import { Image } from "astro:assets";
+import { markdownify } from "@/lib/utils/textConverter";
+import Banner from "@/partials/Banner.astro";
+import CallToAction from "@/partials/CallToAction.astro";
+import Features from "@/partials/Features.astro";
+import type { Button, Feature } from "@/types";
+import { getEntryBySlug } from "astro:content";
+import Testimonial from "@/layouts/partials/Testimonial.astro";
+import { FaCheck, FaUniversity, FaLightbulb, FaCode, FaShareAlt, FaUpload} from "react-icons/fa/index.js";
+
+interface Homepage {
+  banner: {
+    title: string;
+    content: string;
+    image: string;
+    button: Button;
+  };
+  features: Feature[];
+}
+
+const homepage = await getEntryBySlug("promptathon", "-index");
+// const testimonial = await getEntryBySlug("sections", "testimonial");
+// const call_to_action = await getEntryBySlug("sections", "call-to-action");
+const { banner, features }: Homepage = homepage.data;
+const bullet = "the brown fox jump over the lazy dog";
+const title = "Hoa, check";
+const content = "Cloud-based Prompt IDE for managing the lifecycle of Prompts, deploying Prompts as Packages, and creating instant Apps powered by self-trained Micro LLMs";
+const link_href = "https://google.com";
+const link_title = "Register";
+const image = "https://sugarcaneai.dev/images/sugar/sample-cube.png";
+const registerLink = 'https://play.sugarcaneai.dev/api/auth/signin'
+---
+
+<Base>
+  <!-- <Banner banner={banner} /> -->
+  <!-- <Features features={features} /> -->
+  <!-- <Testimonial testimonial={testimonial} /> -->
+  <!-- <CallToAction call_to_action={call_to_action} /> -->
+
+  <section class="section p-2 bg-gradient">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="text-center lg:col-8">
+          <h3
+            set:html={markdownify(
+              "Build Your first GenAI App without any coding skills",
+            )}
+            class=""
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class={`section-sm ${"bg-gradient"}`}>
+    <!-- Image -->
+    <div class="container">
+      
+      <div class="row items-center justify-between">
+      
+        
+        <div class={`md:col-7 lg:col-6 md:order-1"}`}>
+          <h2 set:html={markdownify("Build Your Gen AI without Coding")} class="mb-4" />
+          <p set:html={markdownify("Use your creativity to build an AI-powered agent. Broaden your skill set and have an impact on the open-source community.")} class="mb-8 text-lg" />
+          
+          <!-- <ul>
+            <li class="relative mb-4 pl-6">
+              <FaCheck className={"absolute left-0 top-1.5"} />
+              <span set:html={markdownify(bullet)} />
+            </li>
+            <li class="relative mb-4 pl-6">
+              <FaCheck className={"absolute left-0 top-1.5"} />
+              <span set:html={markdownify(bullet)} />
+            </li>
+            <li class="relative mb-4 pl-6">
+              <FaCheck className={"absolute left-0 top-1.5"} />
+              <span set:html={markdownify(bullet)} />
+            </li>
+            <li class="relative mb-4 pl-6">
+              <FaCheck className={"absolute left-0 top-1.5"} />
+              <span set:html={markdownify(bullet)} />
+            </li>
+            <li class="relative mb-4 pl-6">
+              <FaCheck className={"absolute left-0 top-1.5"} />
+              <span set:html={markdownify(bullet)} />
+            </li>
+          </ul> -->
+
+          <a class="btn btn-primary mt-5" href={registerLink}>
+            {"Register Now"}
+          </a>
+          <p set:html={markdownify("By registering to this hackathon you are giving permission to SugarcaneAI to send you Hackathon details over email")} class="pt-10 mb-8 text-sm" />
+
+          <div class="container mx-auto p-8 mt-8 shadow-lg border border-gray-500 rounded-lg">
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Hackathon Start Date -->
+                <div>
+                    <label class="text-gray-400">Start Date:</label>
+                    <p class="text-lg text-gray-500">October 15, 2023</p>
+                </div>
+        
+                <!-- Hackathon End Date -->
+                <div>
+                    <label class="text-gray-400">End Date:</label>
+                    <p class="text-lg text-gray-500">October 17, 2023</p>
+                </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class={`mb:md-0 mb-6 md:col-5 md:order-2"}`}>
+          <Image
+            src={image}
+            height={480}
+            width={520}
+            fit="contain"
+            background="rgba(0,0,0,0)"
+            alt={title}
+            format="webp"
+          />
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class={`section-sm ${"bg-gradient"}`}>
+    <!-- Image -->
+    <div class="container">
+      
+      <div class="row items-center justify-between">
+        <div class={`mb:md-0 mb-6 md:col-5 md:order-2"}`}>
+          <Image
+            src={image}
+            height={480}
+            width={520}
+            fit="contain"
+            background="rgba(0,0,0,0)"
+            alt={title}
+            format="webp"
+          />
+        </div>
+        <div class={`md:col-7 lg:col-6 md:order-1"}`}>
+          <h2 set:html={markdownify("About Promptathon")} class="mb-4" />
+          <p set:html={markdownify(content)} class="mb-8 text-lg" />
+          <ul>
+            {
+              (
+                <li class="relative mb-4 pl-6">
+                  <FaCheck className={"absolute left-0 top-1.5"} />
+                  <span set:html={markdownify(bullet)} />
+                </li>
+                <li class="relative mb-4 pl-6">
+                  <FaCheck className={"absolute left-0 top-1.5"} />
+                  <span set:html={markdownify(bullet)} />
+                </li>
+                <li class="relative mb-4 pl-6">
+                  <FaCheck className={"absolute left-0 top-1.5"} />
+                  <span set:html={markdownify(bullet)} />
+                </li>
+                <li class="relative mb-4 pl-6">
+                  <FaCheck className={"absolute left-0 top-1.5"} />
+                  <span set:html={markdownify(bullet)} />
+                </li>
+                <li class="relative mb-4 pl-6">
+                  <FaCheck className={"absolute left-0 top-1.5"} />
+                  <span set:html={markdownify(bullet)} />
+                </li>
+
+              )
+            }
+          </ul>
+          {
+            (
+              <a class="btn btn-primary mt-5" href={link_href}>
+                {link_title}
+              </a>
+            )
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class={`section-sm ${"bg-gradient"}`}>
+    <!-- Image -->
+    <div class="container">
+      
+      <div class="row items-center justify-between">
+        <div class={`mb:md-0 mb-6 md:col-5 md:order-2"}`}>
+          <Image
+            src={image}
+            height={480}
+            width={520}
+            fit="contain"
+            background="rgba(0,0,0,0)"
+            alt={title}
+            format="webp"
+          />
+        </div>
+        <div class={`md:col-7 lg:col-6 md:order-1"}`}>
+          <h2 set:html={markdownify("How to participate ?")} class="mb-4" />
+          <p set:html={markdownify(content)} class="mb-8 text-lg" />
+          <ul class="text-lg">
+            {
+              (
+                <li class="relative mb-4 pl-6">
+                  <FaUniversity className={"absolute left-0 top-1.5"} />
+                  <span set:html={markdownify("Learn about prompt Engineering")} />
+                </li>
+                <li class="relative mb-4 pl-6">
+                  <FaLightbulb className={"absolute left-0 top-1.5"} />
+                  <span set:html={markdownify("Get ideas for your App")} />
+                </li>
+                <li class="relative mb-4 pl-6">
+                  <FaCode  className={"absolute left-0 top-1.5"} />
+                  <span set:html={markdownify("Build the Gen App")} />
+                </li>
+                <li class="relative mb-4 pl-6">
+                  <FaShareAlt className={"absolute left-0 top-1.5"} />
+                  <span set:html={markdownify("Share and get Feedback")} />
+                </li>
+                <li class="relative mb-4 pl-6">
+                  <FaUpload className={"absolute left-0 top-1.5"} />
+                  <span set:html={markdownify("Submit you App")} />
+                </li>
+              )
+            }
+          </ul>
+          {
+            (
+              <a class="btn btn-primary mt-5" href={link_href}>
+                {link_title}
+              </a>
+            )
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class={`section-sm ${"bg-gradient"}`}>
+    <!-- Image -->
+    <div class="container">
+      
+      <div class="row items-center justify-between">
+        <div class={`mb:md-0 mb-6 md:col-5 md:order-2"}`}>
+          <Image
+            src={image}
+            height={480}
+            width={520}
+            fit="contain"
+            background="rgba(0,0,0,0)"
+            alt={title}
+            format="webp"
+          />
+        </div>
+        <div class={`md:col-7 lg:col-6 md:order-1"}`}>
+          <h2 set:html={markdownify(title)} class="mb-4" />
+          <p set:html={markdownify(content)} class="mb-8 text-lg" />
+          <ul>
+            {
+              (
+                <li class="relative mb-4 pl-6">
+                  <FaCheck className={"absolute left-0 top-1.5"} />
+                  <span set:html={markdownify(bullet)} />
+                </li>
+                <li class="relative mb-4 pl-6">
+                  <FaCheck className={"absolute left-0 top-1.5"} />
+                  <span set:html={markdownify(bullet)} />
+                </li>
+                <li class="relative mb-4 pl-6">
+                  <FaCheck className={"absolute left-0 top-1.5"} />
+                  <span set:html={markdownify(bullet)} />
+                </li>
+                <li class="relative mb-4 pl-6">
+                  <FaCheck className={"absolute left-0 top-1.5"} />
+                  <span set:html={markdownify(bullet)} />
+                </li>
+                <li class="relative mb-4 pl-6">
+                  <FaCheck className={"absolute left-0 top-1.5"} />
+                  <span set:html={markdownify(bullet)} />
+                </li>
+
+              )
+            }
+          </ul>
+          {
+            (
+              <a class="btn btn-primary mt-5" href={link_href}>
+                {link_title}
+              </a>
+            )
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+</Base>

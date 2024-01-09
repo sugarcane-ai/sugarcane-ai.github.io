@@ -150,7 +150,7 @@ const SignupForm = ({ isOpen, onRequestClose, emailParameter, emailkey }) => {
   );
 };
 
-function JoinWaitlist({
+function UnsubscribeMaillist({
   klass = "btn btn-primary mt-5",
   styles = { marginLeft: "1rem" },
 }) {
@@ -183,4 +183,4 @@ function JoinWaitlist({
   );
 }
 
-export default JoinWaitlist;
+export default UnsubscribeMaillist;
