@@ -10,7 +10,8 @@ banner:
     link: "https://play.sugarcaneai.dev/api/auth/signin?callbackUrl=https%3A%2F%2Fplay.sugarcaneai.dev%2F"
   button:
     enable: true
-    label: "Join Promptathon"
+    hightlight: true
+    label: "Promptathon 1.0"
     link: "https://chat.whatsapp.com/KNox6QtDgKt8mY5AWb6mxJ"
   # button2:
   #   enable: true

@@ -17,9 +17,18 @@ const { banner } = Astro.props;
 
             {
               banner.button.enable && (
-                <a class="btn btn-primary" href={banner.button.link}>
+              
+                <a class="btn btn-primary relative" href={banner.button.link}>
+                  
                   {banner.button.label}
+                  {true &&
+                    (<div class="absolute top-4 left-2  w-2 h-2 rounded-full bg-gray-600 animate-ping"></div>
+                    <div class="absolute top-4 left-2 w-2 h-2 rounded-full bg-gray-600"></div>)
+                  }
                 </a>
+                
+
+                    
               )
             }
             {
