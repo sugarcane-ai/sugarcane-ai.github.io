@@ -4,20 +4,23 @@ banner:
   title: "npm like package ecosystem for Prompts"
   content: "Cloud-based Prompt IDE for managing the lifecycle of Prompts, deploying Prompts as Packages, and creating instant Apps powered by self-trained Micro LLMs"
   # image: "/images/sugar/banner-new.png"
-  button:
+  button2:
     enable: true
     label: "Get Started"
     link: "https://play.sugarcaneai.dev/api/auth/signin?callbackUrl=https%3A%2F%2Fplay.sugarcaneai.dev%2F"
-  button2:
+  button:
     enable: true
-    label: "Docs"
-    link: "/docs"
+    label: "Join Promptathon"
+    link: "https://chat.whatsapp.com/KNox6QtDgKt8mY5AWb6mxJ"
+  # button2:
+  #   enable: true
+  #   label: "Docs"
+  #   link: "/docs"
   waitlist:
     enable: false
 
   # Tabs
   tabs:
-    
     - name: "Create & Deploy Prompt Packages"
       url: "/images/sugar/banner-factory.png"
 
@@ -60,34 +63,34 @@ features:
     waitlist2:
       enable: false
 
-#   - title: "Sugar Farm  🚜"
-#     image: false
-#     content: "Data Assistant for **Data Scientists** to build Micro LLMs"
-#     bulletpoints:
-#       - "Train and backtest Micro LLMs using labeled datasets"
-#       - "Version and ship Fine tuned LLMs over APIs"
-#       - "Publish fine-tuned Micro LLMs on Sugar Hub"
+  #   - title: "Sugar Farm  🚜"
+  #     image: false
+  #     content: "Data Assistant for **Data Scientists** to build Micro LLMs"
+  #     bulletpoints:
+  #       - "Train and backtest Micro LLMs using labeled datasets"
+  #       - "Version and ship Fine tuned LLMs over APIs"
+  #       - "Publish fine-tuned Micro LLMs on Sugar Hub"
 
-#     button:
-#       enable: false
-#       label: "Join Waitlist"
-#       link: "#"
-#     waitlist:
-#       enable: true
+  #     button:
+  #       enable: false
+  #       label: "Join Waitlist"
+  #       link: "#"
+  #     waitlist:
+  #       enable: true
 
-#     title2: "Sugar Bakery 🍞"
-#     content2: "SDK for **Application Develpers** to develop cross-LLM business logic applications"
-#     bulletpoints2:
-#       - "Implement workflows/plugins with just a few lines of code"
-#       - "Client libraries supporting multiple languages."
-#       - "Integrate managed prompt packages from Sugar Hub"
+  #     title2: "Sugar Bakery 🍞"
+  #     content2: "SDK for **Application Develpers** to develop cross-LLM business logic applications"
+  #     bulletpoints2:
+  #       - "Implement workflows/plugins with just a few lines of code"
+  #       - "Client libraries supporting multiple languages."
+  #       - "Integrate managed prompt packages from Sugar Hub"
 
-#     button2:
-#       enable: false
-#       label: "Join Waitlist"
-#       link: "#"
-#     waitlist2:
-#       enable: true
+  #     button2:
+  #       enable: false
+  #       label: "Join Waitlist"
+  #       link: "#"
+  #     waitlist2:
+  #       enable: true
 
   - title: "What are Prompt Packages ?"
     image: "/images/sugar/prompt-package-3.png"
@@ -116,7 +119,7 @@ features:
       link: "https://play.sugarcaneai.dev/api/auth/signin?callbackUrl=https%3A%2F%2Fplay.sugarcaneai.dev%2F"
     waitlist:
       enable: false
-  
+
   - title: "What are Sugar Cubes ?"
     image: "/images/sugar/sample-cube.png"
     content: "Sugar Cubes aka Prompt Applications are the quickest and easiest way to create and collaborate over a LLM based application. A cube can be created by just writing a Prompt without any hassle of LLM integration or code deployments"
